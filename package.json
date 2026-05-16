@@ -1,0 +1,22 @@
+{
+  "name": "eksam",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fetch": "python3 scripts/fetch_materials.py",
+    "extract": "python3 scripts/extract_tasks.py",
+    "pipeline": "python3 scripts/run_pipeline.py"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.60.1",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "@types/bun": "latest",
+    "svelte": "^5.55.7",
+    "vite": "^8.0.13",
+    "typescript": "^6.0.3"
+  }
+}

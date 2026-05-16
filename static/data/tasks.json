@@ -1,0 +1,2460 @@
+[
+  {
+    "id": "2021-i-1",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2021 part 1 task 1",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.754436492919922,
+          "x1": 565.2760009765625,
+          "y1": 397.3731994628906
+        },
+        "image": "/generated/tasks/2021-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-2",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2021 part 1 task 2",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 387.3731994628906,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-3",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2021 part 1 task 3",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.754436492919922,
+          "x1": 565.2760009765625,
+          "y1": 426.49920654296875
+        },
+        "image": "/generated/tasks/2021-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-4",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2021 part 1 task 4",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 416.49920654296875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-5",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2021 part 1 task 5",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.811016082763672,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-6",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2021 part 1 task 6",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.199016571044922,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-6-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-i-7",
+    "year": 2021,
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2021 part 1 task 7",
+    "sourcePdf": "/pdfs/2021-laia-i.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.754436492919922,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-i-7-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-ii-8",
+    "year": 2021,
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2021 part 2 task 8",
+    "sourcePdf": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.321331024169922,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-ii-8-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-ii-9",
+    "year": 2021,
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2021 part 2 task 9",
+    "sourcePdf": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.773113250732422,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-ii-9-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-ii-10",
+    "year": 2021,
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2021 part 2 task 10",
+    "sourcePdf": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 21.855937957763672,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-ii-10-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-ii-11",
+    "year": 2021,
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2021 part 2 task 11",
+    "sourcePdf": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 21.855937957763672,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-ii-11-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-ii-11-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2021-ii-12",
+    "year": 2021,
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2021 part 2 task 12",
+    "sourcePdf": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 27.543987274169922,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2021-ii-12-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2021-ii-12-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2022-i-1",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2022 part 1 task 1",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 398.2372131347656
+        },
+        "image": "/generated/tasks/2022-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-1-p1.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-1-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-1-p1.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-2",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2022 part 1 task 2",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 388.2372131347656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-2-p2.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-2-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-2-p2.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-3",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2022 part 1 task 3",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 427.3586120605469
+        },
+        "image": "/generated/tasks/2022-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-3-p3.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-3-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-3-p3.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-4",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2022 part 1 task 4",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 417.3586120605469,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-4-p4.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-4-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-4-p4.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-5",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2022 part 1 task 5",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.675018310546875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-5-p5.png"
+      },
+      {
+        "page": 6,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-5-p6.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-5-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-5-p5.png",
+      "/generated/answers/2022-i-5-p6.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-6",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2022 part 1 task 6",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.199016571044922,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 7,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-6-p7.png"
+      },
+      {
+        "page": 8,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-6-p8.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-6-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-6-p7.png",
+      "/generated/answers/2022-i-6-p8.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-i-7",
+    "year": 2022,
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2022 part 1 task 7",
+    "sourcePdf": "/pdfs/2022-laia-i.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 9,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-i-7-p9.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-i-7-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-i-7-p9.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-ii-8",
+    "year": 2022,
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2022 part 2 task 8",
+    "sourcePdf": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.185333251953125,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 10,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-8-p10.png"
+      },
+      {
+        "page": 11,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-8-p11.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-ii-8-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-ii-8-p10.png",
+      "/generated/answers/2022-ii-8-p11.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-ii-9",
+    "year": 2022,
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2022 part 2 task 9",
+    "sourcePdf": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.637115478515625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 12,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-9-p12.png"
+      },
+      {
+        "page": 13,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-9-p13.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-ii-9-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-ii-9-p12.png",
+      "/generated/answers/2022-ii-9-p13.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-ii-10",
+    "year": 2022,
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2022 part 2 task 10",
+    "sourcePdf": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.331939697265625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 14,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-10-p14.png"
+      },
+      {
+        "page": 15,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-10-p15.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-ii-10-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-ii-10-p14.png",
+      "/generated/answers/2022-ii-10-p15.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-ii-11",
+    "year": 2022,
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2022 part 2 task 11",
+    "sourcePdf": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.331939697265625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-ii-11-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 16,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-11-p16.png"
+      },
+      {
+        "page": 17,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-11-p17.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-ii-11-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-ii-11-p16.png",
+      "/generated/answers/2022-ii-11-p17.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2022-ii-12",
+    "year": 2022,
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2022 part 2 task 12",
+    "sourcePdf": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 29.019989013671875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2022-ii-12-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 18,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-12-p18.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2022-ii-12-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2022-ii-12-p18.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-1",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2023 part 1 task 1",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 398.2372131347656
+        },
+        "image": "/generated/tasks/2023-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-1-p1.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-1-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-1-p1.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-2",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2023 part 1 task 2",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 388.2372131347656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-2-p2.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-2-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-2-p2.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-3",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2023 part 1 task 3",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 427.3586120605469
+        },
+        "image": "/generated/tasks/2023-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-3-p3.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-3-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-3-p3.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-4",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2023 part 1 task 4",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 417.3586120605469,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-4-p4.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-4-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-4-p4.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-5",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2023 part 1 task 5",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.675018310546875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-5-p5.png"
+      },
+      {
+        "page": 6,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-5-p6.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-5-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-5-p5.png",
+      "/generated/answers/2023-i-5-p6.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-6",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2023 part 1 task 6",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.675018310546875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 7,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-6-p7.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-6-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-6-p7.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-i-7",
+    "year": 2023,
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2023 part 1 task 7",
+    "sourcePdf": "/pdfs/2023-laia-i.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.618438720703125,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 8,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-i-7-p8.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-i-7-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-i-7-p8.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-ii-8",
+    "year": 2023,
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2023 part 2 task 8",
+    "sourcePdf": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.185333251953125,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 9,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-8-p9.png"
+      },
+      {
+        "page": 10,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-8-p10.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-ii-8-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-ii-8-p9.png",
+      "/generated/answers/2023-ii-8-p10.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-ii-9",
+    "year": 2023,
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2023 part 2 task 9",
+    "sourcePdf": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.637115478515625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 11,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-9-p11.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-ii-9-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-ii-9-p11.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-ii-10",
+    "year": 2023,
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2023 part 2 task 10",
+    "sourcePdf": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.331939697265625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 12,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-10-p12.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-ii-10-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-ii-10-p12.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-ii-11",
+    "year": 2023,
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2023 part 2 task 11",
+    "sourcePdf": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.331939697265625,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-ii-11-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 13,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-11-p13.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-ii-11-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-ii-11-p13.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2023-ii-12",
+    "year": 2023,
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2023 part 2 task 12",
+    "sourcePdf": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 29.019989013671875,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2023-ii-12-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 14,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2023-ii-12-p14.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2023-ii-12-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2023-ii-12-p14.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-1",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2024 part 1 task 1",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.858314514160156,
+          "x1": 565.2750244140625,
+          "y1": 398.47711181640625
+        },
+        "image": "/generated/tasks/2024-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-1-p1.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-1-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-1-p1.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-2",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2024 part 1 task 2",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 388.47711181640625,
+          "x1": 565.2750244140625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-2-p2.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-2-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-2-p2.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-3",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2024 part 1 task 3",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.858314514160156,
+          "x1": 1160.550048828125,
+          "y1": 427.6062927246094
+        },
+        "image": "/generated/tasks/2024-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-3-p3.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-3-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-3-p3.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-4",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2024 part 1 task 4",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 417.6062927246094,
+          "x1": 1160.550048828125,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-4-p4.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-4-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-4-p4.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-5",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2024 part 1 task 5",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.914894104003906,
+          "x1": 565.2750244140625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-5-p5.png"
+      },
+      {
+        "page": 6,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-5-p6.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-5-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-5-p5.png",
+      "/generated/answers/2024-i-5-p6.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-6",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2024 part 1 task 6",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.914894104003906,
+          "x1": 1160.550048828125,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-i-6-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 7,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-6-p7.png"
+      },
+      {
+        "page": 8,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-6-p8.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-6-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-6-p7.png",
+      "/generated/answers/2024-i-6-p8.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-i-7",
+    "year": 2024,
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2024 part 1 task 7",
+    "sourcePdf": "/pdfs/2024-laia-i.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.858314514160156,
+          "x1": 565.2750244140625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-i-7-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 9,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-i-7-p9.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-i-7-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-i-7-p9.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-ii-8",
+    "year": 2024,
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2024 part 2 task 8",
+    "sourcePdf": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 23.571815490722656,
+          "x1": 1160.550048828125,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 10,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-8-p10.png"
+      },
+      {
+        "page": 11,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-8-p11.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-ii-8-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-ii-8-p10.png",
+      "/generated/answers/2024-ii-8-p11.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-ii-9",
+    "year": 2024,
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2024 part 2 task 9",
+    "sourcePdf": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.876991271972656,
+          "x1": 1160.550048828125,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 12,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-9-p12.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-ii-9-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-ii-9-p12.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-ii-10",
+    "year": 2024,
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2024 part 2 task 10",
+    "sourcePdf": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.571815490722656,
+          "x1": 565.2750244140625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 13,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-10-p13.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-ii-10-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-ii-10-p13.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-ii-11",
+    "year": 2024,
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2024 part 2 task 11",
+    "sourcePdf": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 23.571815490722656,
+          "x1": 1160.550048828125,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-ii-11-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 14,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-11-p14.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-ii-11-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-ii-11-p14.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2024-ii-12",
+    "year": 2024,
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2024 part 2 task 12",
+    "sourcePdf": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 29.259925842285156,
+          "x1": 565.2750244140625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2024-ii-12-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 15,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2024-ii-12-p15.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2024-ii-12-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2024-ii-12-p15.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-1",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2025 part 1 task 1",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.858436584472656,
+          "x1": 565.2760009765625,
+          "y1": 398.4772033691406
+        },
+        "image": "/generated/tasks/2025-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-1-p1.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-1-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-1-p1.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-2",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2025 part 1 task 2",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 388.4772033691406,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-2-p2.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-2-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-2-p2.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-3",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2025 part 1 task 3",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.858436584472656,
+          "x1": 565.2760009765625,
+          "y1": 427.5986022949219
+        },
+        "image": "/generated/tasks/2025-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-3-p3.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-3-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-3-p3.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-4",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2025 part 1 task 4",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 417.5986022949219,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-4-p4.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-4-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-4-p4.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-5",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2025 part 1 task 5",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.915016174316406,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-5-p5.png"
+      },
+      {
+        "page": 6,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-5-p6.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-5-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-5-p5.png",
+      "/generated/answers/2025-i-5-p6.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-6",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2025 part 1 task 6",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.915016174316406,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 7,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-6-p7.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-6-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-6-p7.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-i-7",
+    "year": 2025,
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2025 part 1 task 7",
+    "sourcePdf": "/pdfs/2025-laia-i.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.858436584472656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 8,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-i-7-p8.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-i-7-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-i-7-p8.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-ii-8",
+    "year": 2025,
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2025 part 2 task 8",
+    "sourcePdf": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.425331115722656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 9,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-8-p9.png"
+      },
+      {
+        "page": 10,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-8-p10.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-ii-8-p2.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-ii-8-p9.png",
+      "/generated/answers/2025-ii-8-p10.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-ii-9",
+    "year": 2025,
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2025 part 2 task 9",
+    "sourcePdf": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.425331115722656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 11,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-9-p11.png"
+      },
+      {
+        "page": 12,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-9-p12.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-ii-9-p3.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-ii-9-p11.png",
+      "/generated/answers/2025-ii-9-p12.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-ii-10",
+    "year": 2025,
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2025 part 2 task 10",
+    "sourcePdf": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.503822326660156,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 13,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-10-p13.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-ii-10-p4.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-ii-10-p13.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-ii-11",
+    "year": 2025,
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2025 part 2 task 11",
+    "sourcePdf": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.503822326660156,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-ii-11-p5.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 14,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-11-p14.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-ii-11-p5.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-ii-11-p14.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  },
+  {
+    "id": "2025-ii-12",
+    "year": 2025,
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2025 part 2 task 12",
+    "sourcePdf": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 26.425331115722656,
+          "x1": 565.2760009765625,
+          "y1": 801.8900146484375
+        },
+        "image": "/generated/tasks/2025-ii-12-p6.png"
+      }
+    ],
+    "answerPieces": [
+      {
+        "page": 15,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 842.0,
+          "y1": 595.219970703125
+        },
+        "image": "/generated/answers/2025-ii-12-p15.png"
+      }
+    ],
+    "taskImagePaths": [
+      "/generated/tasks/2025-ii-12-p6.png"
+    ],
+    "answerImagePaths": [
+      "/generated/answers/2025-ii-12-p15.png"
+    ],
+    "extractionConfidence": "high",
+    "needsReview": false
+  }
+]

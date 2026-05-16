@@ -1,0 +1,116 @@
+[
+  {
+    "year": 2021,
+    "part": 1,
+    "detectedTaskCount": 7,
+    "expectedTaskCount": 7,
+    "missingTasks": [],
+    "lowConfidenceTasks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "sourcePdfPath": "/pdfs/2021-laia-i.pdf",
+    "gradingPdfPath": "/pdfs/2021-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2021,
+    "part": 2,
+    "detectedTaskCount": 5,
+    "expectedTaskCount": 5,
+    "missingTasks": [],
+    "lowConfidenceTasks": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sourcePdfPath": "/pdfs/2021-laia-ii.pdf",
+    "gradingPdfPath": "/pdfs/2021-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2022,
+    "part": 1,
+    "detectedTaskCount": 7,
+    "expectedTaskCount": 7,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2022-laia-i.pdf",
+    "gradingPdfPath": "/pdfs/2022-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2022,
+    "part": 2,
+    "detectedTaskCount": 5,
+    "expectedTaskCount": 5,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2022-laia-ii.pdf",
+    "gradingPdfPath": "/pdfs/2022-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2023,
+    "part": 1,
+    "detectedTaskCount": 7,
+    "expectedTaskCount": 7,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2023-laia-i.pdf",
+    "gradingPdfPath": "/pdfs/2023-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2023,
+    "part": 2,
+    "detectedTaskCount": 5,
+    "expectedTaskCount": 5,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2023-laia-ii.pdf",
+    "gradingPdfPath": "/pdfs/2023-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2024,
+    "part": 1,
+    "detectedTaskCount": 7,
+    "expectedTaskCount": 7,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2024-laia-i.pdf",
+    "gradingPdfPath": "/pdfs/2024-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2024,
+    "part": 2,
+    "detectedTaskCount": 5,
+    "expectedTaskCount": 5,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2024-laia-ii.pdf",
+    "gradingPdfPath": "/pdfs/2024-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2025,
+    "part": 1,
+    "detectedTaskCount": 7,
+    "expectedTaskCount": 7,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2025-laia-i.pdf",
+    "gradingPdfPath": "/pdfs/2025-hindamisjuhend.pdf"
+  },
+  {
+    "year": 2025,
+    "part": 2,
+    "detectedTaskCount": 5,
+    "expectedTaskCount": 5,
+    "missingTasks": [],
+    "lowConfidenceTasks": [],
+    "sourcePdfPath": "/pdfs/2025-laia-ii.pdf",
+    "gradingPdfPath": "/pdfs/2025-hindamisjuhend.pdf"
+  }
+]
