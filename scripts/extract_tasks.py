@@ -74,8 +74,6 @@ def detect_starts(document: fitz.Document, allow_number_only: bool = False) -> l
             number = find_task_number(block_text, allow_number_only)
             if number is None:
                 continue
-            if block_text.startswith("LISALEHT Ülesanne") and page.rect.width > 800:
-                x0 = page.rect.width / 2 + 47
             if block_text.startswith("Hindaja Ülesanne") and page.rect.width > 800:
                 x0 = page.rect.width / 2 + 47
             if x0 > page.rect.width * 0.75:
@@ -127,6 +125,10 @@ def crop_for_page(page: fitz.Page, start: Start, y0: float, y1: float, *, full_w
     x0, x1 = horizontal_bounds(page, start, full_width=full_width)
     top = min(max(0, y0 - 20), max(0, rect.height - 2))
     desired_bottom = y1 - 10
+    content_bottom = non_grid_content_bottom(page, x0, x1, top, desired_bottom)
+    grid_top = detect_grid_top(page, x0, x1, max(top, content_bottom + 8), desired_bottom)
+    if grid_top is not None and grid_top > top + 60:
+        desired_bottom = min(desired_bottom, grid_top - 6)
     if enforce_min_height:
         desired_bottom = max(top + 80, desired_bottom)
     bottom = min(rect.height, desired_bottom)
@@ -134,6 +136,75 @@ def crop_for_page(page: fitz.Page, start: Start, y0: float, y1: float, *, full_w
         top = 0
         bottom = rect.height
     return fitz.Rect(x0, top, x1, bottom)
+
+
+def is_light_gray(color: Any) -> bool:
+    if not color or len(color) < 3:
+        return False
+    return min(color[:3]) > 0.72 and max(color[:3]) - min(color[:3]) < 0.08
+
+
+def detect_grid_top(page: fitz.Page, x0: float, x1: float, y0: float, y1: float) -> float | None:
+    horizontal: dict[int, int] = {}
+    vertical: list[tuple[float, float]] = []
+
+    for drawing in page.get_drawings():
+        rect = drawing.get("rect")
+        if rect is None or not is_light_gray(drawing.get("color")):
+            continue
+        if rect.x1 < x0 or rect.x0 > x1 or rect.y1 < y0 or rect.y0 > y1:
+            continue
+        width = rect.x1 - rect.x0
+        height = rect.y1 - rect.y0
+        if height <= 1 and width >= 8:
+            key = round(rect.y0)
+            horizontal[key] = horizontal.get(key, 0) + 1
+        elif width <= 1 and height >= 8:
+            vertical.append((rect.y0, rect.y1))
+
+    for key in sorted(horizontal):
+        if horizontal[key] < 8:
+            continue
+        vertical_at_row = sum(1 for top, bottom in vertical if top <= key + 2 and bottom >= key + 8)
+        if vertical_at_row >= 8:
+            return float(key)
+
+    return None
+
+
+def non_grid_content_bottom(page: fitz.Page, x0: float, x1: float, y0: float, y1: float) -> float:
+    bottom = y0
+    usable_bottom = min(y1, page.rect.height - 60)
+    for block in page.get_text("blocks", sort=True):
+        if len(block) < 5:
+            continue
+        bx0, by0, bx1, by1, text = block[:5]
+        if by1 < y0 or by0 > usable_bottom or bx1 < x0 or bx0 > x1:
+            continue
+        block_text = " ".join(str(text).split())
+        if block_text and block_text not in {"Hindaja"}:
+            bottom = max(bottom, float(by1))
+
+    for drawing in page.get_drawings():
+        rect = drawing.get("rect")
+        if rect is None or is_light_gray(drawing.get("color")):
+            continue
+        if drawing.get("color") is None:
+            continue
+        if rect.width > page.rect.width * 0.9 and rect.height > page.rect.height * 0.9:
+            continue
+        if rect.y1 < y0 or rect.y0 > usable_bottom or rect.x1 < x0 or rect.x0 > x1:
+            continue
+        width = rect.x1 - rect.x0
+        height = rect.y1 - rect.y0
+        if width <= 2 and height > 250:
+            continue
+        if height <= 2 and width > 350:
+            continue
+        if width > 2 or height > 2:
+            bottom = max(bottom, float(rect.y1))
+
+    return bottom
 
 
 def render_clip(page: fitz.Page, clip: fitz.Rect, target: Path) -> None:

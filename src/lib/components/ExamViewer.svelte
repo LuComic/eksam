@@ -1,7 +1,7 @@
 <script lang="ts">
-  import TaskAnswerRow from './TaskAnswerRow.svelte';
-  import TaskViewer from './TaskViewer.svelte';
-  import type { Exam, Task } from '$lib/types';
+  import TaskAnswerRow from "./TaskAnswerRow.svelte";
+  import TaskViewer from "./TaskViewer.svelte";
+  import type { Exam, Task } from "$lib/types";
 
   type Props = {
     tasks: Task[];
@@ -11,16 +11,22 @@
     onSelectionChange?: (tasks: Task[]) => void;
   };
 
-  let { tasks, exams = [], showYearSelect = true, showAnswers = false, onSelectionChange }: Props = $props();
-  let year = $state<number | ''>('');
+  let {
+    tasks,
+    exams = [],
+    showYearSelect = true,
+    showAnswers = false,
+    onSelectionChange,
+  }: Props = $props();
+  let year = $state<number | "">("");
 
   let availableYears = $derived(
-    [...new Set(tasks.map((task) => task.year))].sort((a, b) => a - b)
+    [...new Set(tasks.map((task) => task.year))].sort((a, b) => a - b),
   );
   let shownTasks = $derived(
     (year ? tasks.filter((task) => task.year === year) : [...tasks]).sort(
-      (a, b) => a.part - b.part || a.taskNumber - b.taskNumber
-    )
+      (a, b) => a.part - b.part || a.taskNumber - b.taskNumber,
+    ),
   );
   let exam = $derived(exams.find((item) => item.year === year));
 
@@ -57,12 +63,16 @@
   {#each [1, 2] as part}
     {@const partTasks = shownTasks.filter((task) => task.part === part)}
     {#if partTasks.length > 0}
-      <h2>Part {part === 1 ? 'I' : 'II'}</h2>
-      {#each partTasks as task (task.id)}
+      <h2>Part {part === 1 ? "I" : "II"}</h2>
+      {#each partTasks as task, index (task.id)}
         {#if showAnswers}
-          <TaskAnswerRow {task} />
+          <div class="task-answer-pair" class:shaded={index % 2 !== 0}>
+            <TaskAnswerRow {task} />
+          </div>
         {:else}
-          <TaskViewer {task} />
+          <div class="task-row" class:shaded={index % 2 !== 0}>
+            <TaskViewer {task} />
+          </div>
         {/if}
       {/each}
     {/if}
@@ -77,5 +87,20 @@
 
   .pdfs a {
     margin-right: 1rem;
+  }
+
+  .task-answer-pair {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .task-row {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .task-answer-pair.shaded,
+  .task-row.shaded {
+    background: #f0f0f0;
   }
 </style>

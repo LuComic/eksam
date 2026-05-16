@@ -8,6 +8,6 @@ export const universal = {
   "ssr": false
 };
 export const universal_id = "src/routes/+layout.ts";
-export const imports = ["_app/immutable/nodes/0.CRNk10kL.js","_app/immutable/chunks/BM_AO_ZL.js","_app/immutable/chunks/DEDqjojZ.js"];
+export const imports = ["_app/immutable/nodes/0.BLU6k-lB.js","_app/immutable/chunks/C3V6Csdy.js","_app/immutable/chunks/DEDqjojZ.js"];
 export const stylesheets = [];
 export const fonts = [];

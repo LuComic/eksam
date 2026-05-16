@@ -1,7 +1,7 @@
 <script lang="ts">
-  import ExamViewer from './ExamViewer.svelte';
-  import { buildShuffleExam } from '$lib/random';
-  import type { Task } from '$lib/types';
+  import ExamViewer from "./ExamViewer.svelte";
+  import { buildShuffleExam } from "$lib/random";
+  import type { Task } from "$lib/types";
 
   type Props = {
     tasks: Task[];
@@ -24,7 +24,9 @@
   });
 </script>
 
-<button type="button" onclick={reshuffle} disabled={tasks.length === 0}>reshuffle</button>
+<button type="button" onclick={reshuffle} disabled={tasks.length === 0}
+  >reshuffle</button
+>
 
 {#if selected.length === 0}
   <p>No extracted tasks found for shuffle exam.</p>

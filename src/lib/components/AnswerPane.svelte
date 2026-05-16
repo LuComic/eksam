@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Task } from '$lib/types';
+  import type { Task } from "$lib/types";
 
   type Props = {
     tasks: Task[];
@@ -7,7 +7,6 @@
   };
 
   let { tasks, showTitle = true }: Props = $props();
-
 </script>
 
 <div class="answers">
@@ -17,7 +16,7 @@
   {#if tasks.length === 0}
     <p>No answers selected.</p>
   {:else}
-    {#each tasks as task (task.id)}
+    {#each tasks as task, index (task.id)}
       <section>
         <h3>{task.year}, part {task.part}, task {task.taskNumber}</h3>
         {#if task.answerImagePaths.length > 0}
@@ -26,7 +25,10 @@
           {/each}
         {:else if task.gradingPdf}
           <p><a href={task.gradingPdf}>Open grading PDF</a></p>
-          <iframe src={task.gradingPdf} title={`${task.year} grading PDF for task ${task.taskNumber}`}></iframe>
+          <iframe
+            src={task.gradingPdf}
+            title={`${task.year} grading PDF for task ${task.taskNumber}`}
+          ></iframe>
         {:else}
           <p>No grading PDF found.</p>
         {/if}

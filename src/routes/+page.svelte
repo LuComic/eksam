@@ -1,14 +1,14 @@
 <script lang="ts">
-  import AnswerPane from '$lib/components/AnswerPane.svelte';
-  import ExamViewer from '$lib/components/ExamViewer.svelte';
-  import ShuffleExamViewer from '$lib/components/ShuffleExamViewer.svelte';
-  import TaskAnswerRow from '$lib/components/TaskAnswerRow.svelte';
-  import TaskViewer from '$lib/components/TaskViewer.svelte';
-  import { loadMaterials } from '$lib/data';
-  import { shuffle } from '$lib/random';
-  import type { Exam, Mode, Task } from '$lib/types';
+  import AnswerPane from "$lib/components/AnswerPane.svelte";
+  import ExamViewer from "$lib/components/ExamViewer.svelte";
+  import ShuffleExamViewer from "$lib/components/ShuffleExamViewer.svelte";
+  import TaskAnswerRow from "$lib/components/TaskAnswerRow.svelte";
+  import TaskViewer from "$lib/components/TaskViewer.svelte";
+  import { loadMaterials } from "$lib/data";
+  import { shuffle } from "$lib/random";
+  import type { Exam, Mode, Task } from "$lib/types";
 
-  let mode = $state<Mode | ''>('');
+  let mode = $state<Mode | "">("");
   let showAnswer = $state(false);
   let loading = $state(true);
   let tasks = $state<Task[]>([]);
@@ -36,7 +36,8 @@
 
   function previousTask() {
     if (shuffledTasks.length === 0) return;
-    currentIndex = (currentIndex - 1 + shuffledTasks.length) % shuffledTasks.length;
+    currentIndex =
+      (currentIndex - 1 + shuffledTasks.length) % shuffledTasks.length;
     answerTasks = currentTask ? [currentTask] : [];
   }
 
@@ -51,7 +52,7 @@
   });
 
   $effect(() => {
-    if (mode === 'single-task' && hasTasks && shuffledTasks.length === 0) {
+    if (mode === "single-task" && hasTasks && shuffledTasks.length === 0) {
       resetSingleTask();
     }
     if (!mode) {
@@ -62,6 +63,15 @@
 
 <main>
   <div class="controls">
+    {#if mode === ""}
+      <span>Vali ylesande tyyp</span>
+    {:else if mode === "single-task"}
+      <span class="bold">Single task - yhe suvalise ylesande kaupa</span>
+    {:else if mode === "exam"}
+      <span class="bold">Exam - vali tapne eksam</span>
+    {:else}
+      <span class="bold"> Suvaline eksam erinevate eksamite ylesannetest </span>
+    {/if}
     <select bind:value={mode} aria-label="mode">
       <option value=""></option>
       <option value="single-task">single task</option>
@@ -84,7 +94,7 @@
       <p>No extracted tasks found yet. Run bun run pipeline.</p>
     {:else}
       <div>
-        {#if mode === 'single-task'}
+        {#if mode === "single-task"}
           <div class="nav">
             <button type="button" onclick={previousTask}>previous</button>
             <button type="button" onclick={nextTask}>next</button>
@@ -95,10 +105,19 @@
           {:else}
             <TaskViewer task={currentTask} />
           {/if}
-        {:else if mode === 'exam'}
-          <ExamViewer {tasks} {exams} showAnswers={showAnswer} onSelectionChange={(selected) => (answerTasks = selected)} />
-        {:else if mode === 'shuffle-exam'}
-          <ShuffleExamViewer {tasks} showAnswers={showAnswer} onSelectionChange={(selected) => (answerTasks = selected)} />
+        {:else if mode === "exam"}
+          <ExamViewer
+            {tasks}
+            {exams}
+            showAnswers={showAnswer}
+            onSelectionChange={(selected) => (answerTasks = selected)}
+          />
+        {:else if mode === "shuffle-exam"}
+          <ShuffleExamViewer
+            {tasks}
+            showAnswers={showAnswer}
+            onSelectionChange={(selected) => (answerTasks = selected)}
+          />
         {/if}
       </div>
     {/if}
@@ -122,5 +141,9 @@
     display: flex;
     gap: 0.5rem;
     margin-bottom: 1rem;
+  }
+
+  .bold {
+    font-weight: 600;
   }
 </style>
