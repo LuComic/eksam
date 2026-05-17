@@ -1,25 +1,31 @@
 <script lang="ts">
+  import { taskDisplayTitle } from '$lib/taskLabels';
   import type { Task } from '$lib/types';
 
   type Props = {
     task: Task | null;
+    onGoToExam?: (task: Task) => void;
   };
 
-  let { task }: Props = $props();
+  let { task, onGoToExam }: Props = $props();
+  let title = $derived(task ? taskDisplayTitle(task) : '');
 </script>
 
 {#if task}
   <article class="task">
     <div class="meta">
-      {task.year}, part {task.part}, task {task.taskNumber}
+      <span class="task-label">{task.year}, part {task.part}, task {task.taskNumber}</span>
+      {#if onGoToExam}
+        <button type="button" onclick={() => onGoToExam?.(task)}>go to exam</button>
+      {/if}
       {#if task.needsReview}
         <span>needs review</span>
       {/if}
     </div>
-    <h2>{task.title}</h2>
+    <h2>{title}</h2>
     {#if task.taskImagePaths.length > 0}
       {#each task.taskImagePaths as image}
-        <img src={image} alt={task.title} />
+        <img src={image} alt={title} />
       {/each}
     {:else}
       <p>No task crop found.</p>
@@ -34,7 +40,16 @@
 
 <style>
   .meta {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     margin: 0 0 0.5rem;
+  }
+
+  .task-label {
+    margin-left: 0;
+    font-size: 1rem;
+    color: inherit;
   }
 
   span {

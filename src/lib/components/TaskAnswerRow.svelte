@@ -5,14 +5,15 @@
 
   type Props = {
     task: Task | null;
+    onGoToExam?: (task: Task) => void;
   };
 
-  let { task }: Props = $props();
+  let { task, onGoToExam }: Props = $props();
 </script>
 
 <div class="row">
   <div>
-    <TaskViewer {task} />
+    <TaskViewer {task} {onGoToExam} />
   </div>
   <div>
     <AnswerPane tasks={task ? [task] : []} showTitle={false} />

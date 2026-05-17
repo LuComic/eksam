@@ -8,6 +8,7 @@
     exams?: Exam[];
     showYearSelect?: boolean;
     showAnswers?: boolean;
+    selectedYear?: number | "";
     onSelectionChange?: (tasks: Task[]) => void;
   };
 
@@ -16,6 +17,7 @@
     exams = [],
     showYearSelect = true,
     showAnswers = false,
+    selectedYear = "",
     onSelectionChange,
   }: Props = $props();
   let year = $state<number | "">("");
@@ -89,6 +91,12 @@
     }
     return String(availableYear);
   }
+
+  $effect(() => {
+    if (selectedYear && selectedYear !== year) {
+      year = selectedYear;
+    }
+  });
 
   $effect(() => {
     onSelectionChange?.(shownTasks);

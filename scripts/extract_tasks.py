@@ -308,6 +308,7 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
     pdf_path_value = exam.get("part1Pdf" if part == 1 else "part2Pdf")
     year = int(exam["year"])
     source = str(exam.get("source") or "projektid")
+    combined_question_answer_tips = source == "kool" and "lahenduste ja kommentaaridega" in str(exam.get("formatNote") or "").lower()
     expected = 7 if part == 1 else 5
     report: dict[str, Any] = {
         "year": year,
@@ -387,7 +388,8 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
                     "source": source,
                     "part": part,
                     "taskNumber": start.number,
-                    "title": f"{year} part {part} task {start.number}",
+                    "title": f"{year} part {part} task {start.number}"
+                    + (" (question + answer and tips)" if combined_question_answer_tips else ""),
                     "sourcePdf": str(pdf_path_value),
                     "gradingPdf": str(exam.get("gradingPdf") or exam.get("answerTablePdf") or ""),
                     "taskPieces": task_pieces,
