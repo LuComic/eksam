@@ -181,6 +181,32 @@ def crop_for_page(page: fitz.Page, start: Start, y0: float, y1: float, *, full_w
     return fitz.Rect(x0, top, x1, bottom)
 
 
+def leading_image_rect(page: fitz.Page, start: Start, *, full_width: bool) -> fitz.Rect | None:
+    x0, x1 = horizontal_bounds(page, start, full_width=full_width)
+    leading: fitz.Rect | None = None
+    page_dict = page.get_text("dict", sort=True)
+    for block in page_dict.get("blocks", []):
+        if block.get("type") != 1:
+            continue
+        bx0, by0, bx1, by1 = block.get("bbox", (0, 0, 0, 0))
+        if bx1 < x0 or bx0 > x1:
+            continue
+        if by0 >= start.y or by1 < start.y - 4:
+            continue
+        if start.y - by0 > 90:
+            continue
+        rect = fitz.Rect(bx0, by0, bx1, by1)
+        if leading is None or rect.y0 < leading.y0:
+            leading = rect
+    return leading
+
+
+def visual_start_y(page: fitz.Page, start: Start, *, full_width: bool) -> float:
+    """Include figures that are laid out beside a task heading but start above it."""
+    leading = leading_image_rect(page, start, full_width=full_width)
+    return float(leading.y0) if leading is not None else start.y
+
+
 def is_light_gray(color: Any) -> bool:
     if not color or len(color) < 3:
         return False
@@ -291,7 +317,7 @@ def crop_pieces(
         if page_index != start.page_index and (is_lisaleht_page(page) or is_header_only_page(page)):
             continue
         if page_index == start.page_index:
-            y0 = start.y
+            y0 = visual_start_y(page, start, full_width=full_width)
         else:
             y0 = 0
 

@@ -20,9 +20,25 @@
   let searchInput = $state("");
   let searchTerm = $state("");
   let selectedExamYear = $state<number | "">("");
+  let expandedExamYears = $state<number[]>([]);
 
   let hasTasks = $derived(tasks.length > 0);
   let currentTask = $derived(shuffledTasks[currentIndex] ?? null);
+  let examYears = $derived(
+    Array.from({ length: 19 }, (_, index) => 2025 - index),
+  );
+  let tasksByYear = $derived.by(() => {
+    const groups = new Map<number, Task[]>();
+    for (const task of tasks) {
+      const group = groups.get(task.year) ?? [];
+      group.push(task);
+      groups.set(task.year, group);
+    }
+    for (const group of groups.values()) {
+      group.sort((a, b) => a.part - b.part || a.taskNumber - b.taskNumber);
+    }
+    return groups;
+  });
   let searchResults = $derived.by(() => {
     const term = searchTerm.trim().toLowerCase();
     if (!term) return [];
@@ -80,9 +96,42 @@
   }
 
   function goToExam(task: Task) {
-    selectedExamYear = task.year;
+    selectExamYear(task.year);
+  }
+
+  function selectExamYear(year: number) {
+    selectedExamYear = year;
+    searchInput = "";
     searchTerm = "";
     mode = "exam";
+  }
+
+  function toggleExamYear(year: number) {
+    expandedExamYears = expandedExamYears.includes(year)
+      ? expandedExamYears.filter((item) => item !== year)
+      : [...expandedExamYears, year];
+  }
+
+  function selectTask(task: Task) {
+    shuffledTasks = [
+      task,
+      ...shuffle(tasks.filter((item) => item.id !== task.id)),
+    ];
+    currentIndex = 0;
+    answerTasks = [task];
+    selectedExamYear = "";
+    searchInput = "";
+    searchTerm = "";
+    mode = "single-task";
+  }
+
+  function changeMode(nextMode: Mode | "") {
+    mode = nextMode;
+    searchInput = "";
+    searchTerm = "";
+    if (nextMode !== "exam") {
+      selectedExamYear = "";
+    }
   }
 
   $effect(() => {
@@ -105,7 +154,15 @@
   <aside class="sidebar" aria-label="Exam browser controls">
     <div class="field">
       <label for="mode">Mode</label>
-      <select id="mode" bind:value={mode} aria-label="mode">
+      <select
+        id="mode"
+        value={mode}
+        aria-label="mode"
+        onchange={(event) =>
+          changeMode(
+            (event.currentTarget as HTMLSelectElement).value as Mode | "",
+          )}
+      >
         <option value=""></option>
         <option value="single-task">single task</option>
         <option value="exam">exam</option>
@@ -138,6 +195,51 @@
         <button type="submit">Search</button>
       </div>
     </form>
+
+    <nav class="exam-list" aria-label="Available exams">
+      <h3>Exams</h3>
+      <ul>
+        {#each examYears as year, index (year)}
+          {@const yearTasks = tasksByYear.get(year) ?? []}
+          {@const isExpanded = expandedExamYears.includes(year)}
+          <li>
+            <div class={`exam-list-row ${index % 2 !== 0 ? "gray-bg" : null}`}>
+              <button
+                class="year-link"
+                type="button"
+                onclick={() => selectExamYear(year)}
+              >
+                {year} Eksam
+              </button>
+              <button
+                class="expand-button"
+                type="button"
+                aria-expanded={isExpanded}
+                aria-label={`${isExpanded ? "Collapse" : "Expand"} ${year} tasks`}
+                onclick={() => toggleExamYear(year)}
+              >
+                &gt;
+              </button>
+            </div>
+            {#if isExpanded}
+              {#if yearTasks.length > 0}
+                <ul class="task-dropdown">
+                  {#each yearTasks as task (task.id)}
+                    <li>
+                      <button type="button" onclick={() => selectTask(task)}>
+                        Part {task.part === 1 ? "I" : "II"}, task {task.taskNumber}
+                      </button>
+                    </li>
+                  {/each}
+                </ul>
+              {:else}
+                <p class="no-year-tasks">No extracted tasks</p>
+              {/if}
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </nav>
 
     <div class="status">
       <strong
@@ -306,11 +408,85 @@
   }
 
   .search-row input {
+    min-width: 200px;
     width: 200px;
+  }
+
+  .search-row input::-webkit-search-cancel-button,
+  .search-row input::-webkit-search-decoration {
+    appearance: none;
+    display: none;
   }
 
   .search-row button {
     padding: 2px;
+  }
+
+  .exam-list {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  .exam-list h3 {
+    margin: 0 0 8px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .exam-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .exam-list-row {
+    display: flex;
+    gap: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px black solid;
+  }
+
+  .year-link {
+    min-height: auto;
+    padding: 2px 0 !important;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .expand-button {
+    min-height: auto;
+    padding: 0 !important;
+    border: 0;
+    background: transparent;
+    font-weight: normal;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .task-dropdown {
+    margin: 0 0 8px 12px !important;
+  }
+
+  .task-dropdown button {
+    border-width: 0 0 1px 0;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .no-year-tasks {
+    margin: 0 0 8px 12px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .gray-bg {
+    background-color: var(--soft);
   }
 
   .status {
@@ -386,6 +562,7 @@
       margin-bottom: 8px;
     }
 
+    .exam-list,
     .status {
       display: none;
     }
