@@ -1,10 +1,11 @@
 export type Mode = 'single-task' | 'exam' | 'shuffle-exam';
 
-export type ExamSource = 'projektid' | 'arhmus' | 'kool';
+export type ExamSource = 'projektid' | 'arhmus' | 'kool' | 'local_new_exams';
 
 export type Exam = {
   year: number;
   source?: ExamSource;
+  combinedPdf?: string;
   part1Pdf?: string;
   part2Pdf?: string;
   gradingPdf?: string;

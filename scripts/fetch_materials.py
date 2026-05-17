@@ -12,7 +12,7 @@ from urllib.parse import parse_qs, quote, unquote, urljoin, urlparse
 from urllib.error import URLError
 from urllib.request import Request, urlopen
 
-from sources import ARHMUS_MATERIALS, KOOL_MATERIALS, PROJEKTID_YEAR_PAGES
+from sources import ARHMUS_MATERIALS, KOOL_MATERIALS, LOCAL_NEW_EXAM_YEARS, PROJEKTID_YEAR_PAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = ROOT / "static"
@@ -98,6 +98,7 @@ def classify_pdf(filename: str) -> str | None:
 
 def local_pdf_name(year: int, kind: str) -> str:
     suffix = {
+        "combined": "laia",
         "part1": "laia-i",
         "part2": "laia-ii",
         "grading": "hindamisjuhend",
@@ -149,6 +150,7 @@ def find_candidates(year: int, page_url: str) -> list[PdfCandidate]:
 
 def direct_source_candidates(materials: list[dict[str, object]], source: str) -> dict[int, list[PdfCandidate]]:
     key_to_kind = {
+        "combinedPdfUrl": "combined",
         "part1PdfUrl": "part1",
         "part2PdfUrl": "part2",
         "gradingPdfUrl": "grading",
@@ -172,6 +174,31 @@ def direct_source_candidates(materials: list[dict[str, object]], source: str) ->
     return candidates_by_year
 
 
+def local_new_exam_candidates() -> dict[int, list[PdfCandidate]]:
+    candidates_by_year: dict[int, list[PdfCandidate]] = {}
+    source_dir = ROOT / "new_exams"
+    if not source_dir.exists():
+        return candidates_by_year
+
+    for year in LOCAL_NEW_EXAM_YEARS:
+        exam_pdf = source_dir / f"{year} riigieksam.pdf"
+        answer_pdf = source_dir / f"{year} riigieksam_vastused.pdf"
+        if year == 2021:
+            answer_pdf = source_dir / "2021 riigieksami vastused.pdf"
+        candidates: list[PdfCandidate] = []
+        if exam_pdf.exists():
+            candidates.append(
+                PdfCandidate(year, "combined", exam_pdf.name, exam_pdf.resolve().as_uri(), f"/pdfs/{local_pdf_name(year, 'combined')}", "local_new_exams")
+            )
+        if answer_pdf.exists():
+            candidates.append(
+                PdfCandidate(year, "grading", answer_pdf.name, answer_pdf.resolve().as_uri(), f"/pdfs/{local_pdf_name(year, 'grading')}", "local_new_exams")
+            )
+        if candidates:
+            candidates_by_year[year] = candidates
+    return candidates_by_year
+
+
 def is_valid_pdf(path: Path) -> bool:
     if not path.exists() or path.stat().st_size < 1024:
         return False
@@ -189,6 +216,19 @@ def download(candidates: Iterable[PdfCandidate]) -> None:
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     for candidate in candidates:
         target = PDF_DIR / Path(candidate.local_path).name
+        parsed = urlparse(candidate.url)
+        if parsed.scheme == "file":
+            source = Path(unquote(parsed.path))
+            if not source.exists():
+                print(f"missing local {candidate.year} {candidate.kind}: {source}")
+                continue
+            if not is_valid_download(target) or target.read_bytes() != source.read_bytes():
+                print(f"copying {candidate.year} {candidate.kind}: {candidate.filename}")
+                target.write_bytes(source.read_bytes())
+            else:
+                print(f"skipping {candidate.year} {candidate.kind}: {target.name} already exists")
+            continue
+
         if is_valid_download(target):
             print(f"skipping {candidate.year} {candidate.kind}: {target.name} already exists")
             continue
@@ -205,13 +245,31 @@ def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[
             {
                 "year": year,
                 "source": material.get("source", "arhmus"),
-                "part1Pdf": by_kind.get("part1"),
-                "part2Pdf": by_kind.get("part2"),
+                "combinedPdf": by_kind.get("combined"),
+                "part1Pdf": by_kind.get("part1") or by_kind.get("combined"),
+                "part2Pdf": by_kind.get("part2") or by_kind.get("combined"),
                 "gradingPdf": by_kind.get("grading"),
                 "gradingDocx": by_kind.get("gradingDocx"),
                 "answerTablePdf": by_kind.get("answerTable"),
                 "formatNote": material.get("formatNote"),
                 "sourcePageUrl": material.get("sourcePageUrl", "https://arhmus.tlu.ee/"),
+            }
+        )
+
+    for year in LOCAL_NEW_EXAM_YEARS:
+        by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
+        if not by_kind:
+            continue
+        exams.append(
+            {
+                "year": year,
+                "source": "local_new_exams",
+                "combinedPdf": by_kind.get("combined"),
+                "part1Pdf": by_kind.get("combined"),
+                "part2Pdf": by_kind.get("combined"),
+                "gradingPdf": by_kind.get("grading"),
+                "sourcePageUrl": "new_exams/",
+                "formatNote": "local combined exam PDF with answer table",
             }
         )
 
@@ -243,6 +301,14 @@ def main() -> int:
     candidates_by_year.update(arhmus_by_year)
     for year, candidates in arhmus_by_year.items():
         print(f"configured arhmus {year}")
+        for candidate in candidates:
+            print(f"  {candidate.kind}: {candidate.filename}")
+        download(candidates)
+
+    local_by_year = local_new_exam_candidates()
+    candidates_by_year.update(local_by_year)
+    for year, candidates in local_by_year.items():
+        print(f"configured local_new_exams {year}")
         for candidate in candidates:
             print(f"  {candidate.kind}: {candidate.filename}")
         download(candidates)
