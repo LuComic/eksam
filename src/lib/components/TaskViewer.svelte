@@ -9,6 +9,7 @@
 
   let { task, onGoToExam }: Props = $props();
   let title = $derived(task ? taskDisplayTitle(task) : '');
+  let reviewLabel = $derived(task && task.year < 2014 ? 'might be buggy' : 'needs review');
 </script>
 
 {#if task}
@@ -19,7 +20,7 @@
         <button type="button" onclick={() => onGoToExam?.(task)}>go to exam</button>
       {/if}
       {#if task.needsReview}
-        <span>needs review</span>
+        <span>{reviewLabel}</span>
       {/if}
     </div>
     <h2>{title}</h2>

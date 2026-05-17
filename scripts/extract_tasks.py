@@ -703,7 +703,8 @@ def write_preview(tasks: list[dict[str, Any]]) -> None:
     rows = []
     for task in tasks:
         first = task["taskImagePaths"][0] if task["taskImagePaths"] else ""
-        rows.append(f"<li>{task['id']} {'needs review' if task['needsReview'] else ''}<br><img src='../../{first.lstrip('/')}' width='400'></li>")
+        review_label = "might be buggy" if int(task["year"]) < 2014 else "needs review"
+        rows.append(f"<li>{task['id']} {review_label if task['needsReview'] else ''}<br><img src='../../{first.lstrip('/')}' width='400'></li>")
     html = "<!doctype html><meta charset='utf-8'><title>Extraction review</title><ul>" + "\n".join(rows) + "</ul>"
     (PREVIEW_DIR / "review.html").write_text(html, encoding="utf-8")
 

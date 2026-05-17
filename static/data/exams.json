@@ -30,7 +30,7 @@
     "part1Pdf": "/pdfs/2014-laia.pdf",
     "part2Pdf": "/pdfs/2014-laia.pdf",
     "gradingPdf": "/pdfs/2014-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -40,7 +40,7 @@
     "part1Pdf": "/pdfs/2015-laia.pdf",
     "part2Pdf": "/pdfs/2015-laia.pdf",
     "gradingPdf": "/pdfs/2015-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -50,7 +50,7 @@
     "part1Pdf": "/pdfs/2016-laia.pdf",
     "part2Pdf": "/pdfs/2016-laia.pdf",
     "gradingPdf": "/pdfs/2016-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -60,7 +60,7 @@
     "part1Pdf": "/pdfs/2017-laia.pdf",
     "part2Pdf": "/pdfs/2017-laia.pdf",
     "gradingPdf": "/pdfs/2017-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -70,7 +70,7 @@
     "part1Pdf": "/pdfs/2018-laia.pdf",
     "part2Pdf": "/pdfs/2018-laia.pdf",
     "gradingPdf": "/pdfs/2018-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -80,7 +80,7 @@
     "part1Pdf": "/pdfs/2019-laia.pdf",
     "part2Pdf": "/pdfs/2019-laia.pdf",
     "gradingPdf": "/pdfs/2019-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -90,7 +90,7 @@
     "part1Pdf": "/pdfs/2020-laia.pdf",
     "part2Pdf": "/pdfs/2020-laia.pdf",
     "gradingPdf": "/pdfs/2020-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {
@@ -100,7 +100,7 @@
     "part1Pdf": "/pdfs/2021-laia.pdf",
     "part2Pdf": "/pdfs/2021-laia.pdf",
     "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
-    "sourcePageUrl": "new_exams/",
+    "sourcePageUrl": "/pdfs/",
     "formatNote": "local combined exam PDF with answer table"
   },
   {

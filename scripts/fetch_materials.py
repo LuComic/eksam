@@ -8,11 +8,16 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
-from urllib.parse import parse_qs, quote, unquote, urljoin, urlparse
 from urllib.error import URLError
+from urllib.parse import parse_qs, quote, unquote, urljoin, urlparse
 from urllib.request import Request, urlopen
 
-from sources import ARHMUS_MATERIALS, KOOL_MATERIALS, LOCAL_NEW_EXAM_YEARS, PROJEKTID_YEAR_PAGES
+from sources import (
+    ARHMUS_MATERIALS,
+    KOOL_MATERIALS,
+    LOCAL_NEW_EXAM_YEARS,
+    PROJEKTID_YEAR_PAGES,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = ROOT / "static"
@@ -49,13 +54,19 @@ def extract_pdf_urls(page_url: str, body: str) -> list[str]:
     urls: set[str] = set()
     unescaped = html.unescape(body)
 
-    for match in re.finditer(r"""(?:href|src)=["']([^"']+\.pdf[^"']*)["']""", unescaped, re.I):
+    for match in re.finditer(
+        r"""(?:href|src)=["']([^"']+\.pdf[^"']*)["']""", unescaped, re.I
+    ):
         urls.add(urljoin(page_url, match.group(1)))
 
     for match in re.finditer(r"""preview=(/[^"'<>\s]+?\.pdf)""", unescaped, re.I):
         urls.add(f"{page_url}?preview={match.group(1)}")
 
-    for match in re.finditer(r"""/download/attachments/\d+/[^"'<>\s]+?\.pdf(?:\?[^"'<>\s]+)?""", unescaped, re.I):
+    for match in re.finditer(
+        r"""/download/attachments/\d+/[^"'<>\s]+?\.pdf(?:\?[^"'<>\s]+)?""",
+        unescaped,
+        re.I,
+    ):
         urls.add(urljoin(page_url, match.group(0)))
 
     return sorted(urls)
@@ -87,9 +98,15 @@ def classify_pdf(filename: str) -> str | None:
         return None
     if "vene" in lowered or "ukraina" in lowered or "kitsas" in lowered:
         return None
-    if "hindamisjuhend" in lowered or "hindamine" in lowered or "vastavustabel" in lowered:
+    if (
+        "hindamisjuhend" in lowered
+        or "hindamine" in lowered
+        or "vastavustabel" in lowered
+    ):
         return "grading"
-    if re.search(r"\bi\s*osa\b", normalized) and not re.search(r"\bii\s*osa\b", normalized):
+    if re.search(r"\bi\s*osa\b", normalized) and not re.search(
+        r"\bii\s*osa\b", normalized
+    ):
         return "part1"
     if re.search(r"\bii\s*osa\b", normalized):
         return "part2"
@@ -143,12 +160,18 @@ def find_candidates(year: int, page_url: str) -> list[PdfCandidate]:
             continue
         local_path = f"/pdfs/{local_pdf_name(year, kind)}"
         current = candidates.get(kind)
-        if current is None or candidate_score(year, kind, filename) > candidate_score(year, kind, current.filename):
-            candidates[kind] = PdfCandidate(year, kind, filename, download_url, local_path, "projektid")
+        if current is None or candidate_score(year, kind, filename) > candidate_score(
+            year, kind, current.filename
+        ):
+            candidates[kind] = PdfCandidate(
+                year, kind, filename, download_url, local_path, "projektid"
+            )
     return list(candidates.values())
 
 
-def direct_source_candidates(materials: list[dict[str, object]], source: str) -> dict[int, list[PdfCandidate]]:
+def direct_source_candidates(
+    materials: list[dict[str, object]], source: str
+) -> dict[int, list[PdfCandidate]]:
     key_to_kind = {
         "combinedPdfUrl": "combined",
         "part1PdfUrl": "part1",
@@ -167,32 +190,58 @@ def direct_source_candidates(materials: list[dict[str, object]], source: str) ->
                 continue
             filename = unquote(Path(urlparse(str(url)).path).name)
             if kind == "gradingDocx":
-                candidates.append(PdfCandidate(year, kind, filename, str(url), f"/pdfs/{local_document_name(year, kind, 'docx')}", source))
+                candidates.append(
+                    PdfCandidate(
+                        year,
+                        kind,
+                        filename,
+                        str(url),
+                        f"/pdfs/{local_document_name(year, kind, 'docx')}",
+                        source,
+                    )
+                )
             else:
-                candidates.append(PdfCandidate(year, kind, filename, str(url), f"/pdfs/{local_pdf_name(year, kind)}", source))
+                candidates.append(
+                    PdfCandidate(
+                        year,
+                        kind,
+                        filename,
+                        str(url),
+                        f"/pdfs/{local_pdf_name(year, kind)}",
+                        source,
+                    )
+                )
         candidates_by_year[year] = candidates
     return candidates_by_year
 
 
 def local_new_exam_candidates() -> dict[int, list[PdfCandidate]]:
     candidates_by_year: dict[int, list[PdfCandidate]] = {}
-    source_dir = ROOT / "new_exams"
-    if not source_dir.exists():
-        return candidates_by_year
-
     for year in LOCAL_NEW_EXAM_YEARS:
-        exam_pdf = source_dir / f"{year} riigieksam.pdf"
-        answer_pdf = source_dir / f"{year} riigieksam_vastused.pdf"
-        if year == 2021:
-            answer_pdf = source_dir / "2021 riigieksami vastused.pdf"
+        exam_pdf = PDF_DIR / local_pdf_name(year, "combined")
+        answer_pdf = PDF_DIR / local_pdf_name(year, "grading")
         candidates: list[PdfCandidate] = []
         if exam_pdf.exists():
             candidates.append(
-                PdfCandidate(year, "combined", exam_pdf.name, exam_pdf.resolve().as_uri(), f"/pdfs/{local_pdf_name(year, 'combined')}", "local_new_exams")
+                PdfCandidate(
+                    year,
+                    "combined",
+                    exam_pdf.name,
+                    exam_pdf.resolve().as_uri(),
+                    f"/pdfs/{local_pdf_name(year, 'combined')}",
+                    "local_new_exams",
+                )
             )
         if answer_pdf.exists():
             candidates.append(
-                PdfCandidate(year, "grading", answer_pdf.name, answer_pdf.resolve().as_uri(), f"/pdfs/{local_pdf_name(year, 'grading')}", "local_new_exams")
+                PdfCandidate(
+                    year,
+                    "grading",
+                    answer_pdf.name,
+                    answer_pdf.resolve().as_uri(),
+                    f"/pdfs/{local_pdf_name(year, 'grading')}",
+                    "local_new_exams",
+                )
             )
         if candidates:
             candidates_by_year[year] = candidates
@@ -222,25 +271,39 @@ def download(candidates: Iterable[PdfCandidate]) -> None:
             if not source.exists():
                 print(f"missing local {candidate.year} {candidate.kind}: {source}")
                 continue
-            if not is_valid_download(target) or target.read_bytes() != source.read_bytes():
-                print(f"copying {candidate.year} {candidate.kind}: {candidate.filename}")
+            if (
+                not is_valid_download(target)
+                or target.read_bytes() != source.read_bytes()
+            ):
+                print(
+                    f"copying {candidate.year} {candidate.kind}: {candidate.filename}"
+                )
                 target.write_bytes(source.read_bytes())
             else:
-                print(f"skipping {candidate.year} {candidate.kind}: {target.name} already exists")
+                print(
+                    f"skipping {candidate.year} {candidate.kind}: {target.name} already exists"
+                )
             continue
 
         if is_valid_download(target):
-            print(f"skipping {candidate.year} {candidate.kind}: {target.name} already exists")
+            print(
+                f"skipping {candidate.year} {candidate.kind}: {target.name} already exists"
+            )
             continue
         print(f"downloading {candidate.year} {candidate.kind}: {candidate.filename}")
         target.write_bytes(fetch_bytes(candidate.url))
 
 
-def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[str, object]]:
+def build_exams(
+    candidates_by_year: dict[int, list[PdfCandidate]],
+) -> list[dict[str, object]]:
     exams: list[dict[str, object]] = []
     for material in [*KOOL_MATERIALS, *ARHMUS_MATERIALS]:
         year = int(material["year"])
-        by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
+        by_kind = {
+            candidate.kind: candidate.local_path
+            for candidate in candidates_by_year.get(year, [])
+        }
         exams.append(
             {
                 "year": year,
@@ -252,12 +315,17 @@ def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[
                 "gradingDocx": by_kind.get("gradingDocx"),
                 "answerTablePdf": by_kind.get("answerTable"),
                 "formatNote": material.get("formatNote"),
-                "sourcePageUrl": material.get("sourcePageUrl", "https://arhmus.tlu.ee/"),
+                "sourcePageUrl": material.get(
+                    "sourcePageUrl", "https://arhmus.tlu.ee/"
+                ),
             }
         )
 
     for year in LOCAL_NEW_EXAM_YEARS:
-        by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
+        by_kind = {
+            candidate.kind: candidate.local_path
+            for candidate in candidates_by_year.get(year, [])
+        }
         if not by_kind:
             continue
         exams.append(
@@ -268,13 +336,16 @@ def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[
                 "part1Pdf": by_kind.get("combined"),
                 "part2Pdf": by_kind.get("combined"),
                 "gradingPdf": by_kind.get("grading"),
-                "sourcePageUrl": "new_exams/",
+                "sourcePageUrl": "/pdfs/",
                 "formatNote": "local combined exam PDF with answer table",
             }
         )
 
     for year, page_url in PROJEKTID_YEAR_PAGES.items():
-        by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
+        by_kind = {
+            candidate.kind: candidate.local_path
+            for candidate in candidates_by_year.get(year, [])
+        }
         exams.append(
             {
                 "year": year,
@@ -322,7 +393,9 @@ def main() -> int:
         download(candidates)
 
     exams = build_exams(candidates_by_year)
-    (DATA_DIR / "exams.json").write_text(json.dumps(exams, ensure_ascii=False, indent=2), encoding="utf-8")
+    (DATA_DIR / "exams.json").write_text(
+        json.dumps(exams, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     return 0
 
 
