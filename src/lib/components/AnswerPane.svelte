@@ -38,24 +38,50 @@
 </div>
 
 <style>
-  img {
-    display: block;
-    max-width: 100%;
-    margin: 0 0 1rem;
-    border: 1px solid #ddd;
+  .answers {
+    padding: 18px;
+    border: 1px solid var(--answer-line);
+    background: var(--answers);
+    color: var(--answer-ink);
   }
 
   section {
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
+  }
+
+  h2,
+  h3 {
+    margin-top: 0;
+    color: var(--ink);
   }
 
   h3 {
-    margin-top: 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--answer-line);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+    padding: 28px;
+    border: 1px solid var(--answer-line);
+    border-left: 4px solid var(--answer-ink);
+    background: var(--answer-paper);
   }
 
   iframe {
     width: 100%;
     height: 85vh;
-    border: 1px solid #ddd;
+    border: 1px solid var(--answer-line);
+  }
+
+  @media (max-width: 900px) {
+    img {
+      padding: 12px;
+    }
   }
 </style>

@@ -24,7 +24,7 @@
   });
 </script>
 
-<button type="button" onclick={reshuffle} disabled={tasks.length === 0}
+<button class="primary" type="button" onclick={reshuffle} disabled={tasks.length === 0}
   >reshuffle</button
 >
 
@@ -33,3 +33,24 @@
 {:else}
   <ExamViewer tasks={selected} showYearSelect={false} {showAnswers} />
 {/if}
+
+<style>
+  .primary {
+    width: auto;
+    min-height: 34px;
+    margin-bottom: 18px;
+    padding: 6px 10px;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    background: var(--ink);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .primary:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+</style>

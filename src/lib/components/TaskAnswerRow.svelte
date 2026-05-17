@@ -24,7 +24,17 @@
   .row {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 1rem;
+    gap: 22px;
     align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .row {
+      display: block;
+    }
+
+    .row > :first-child {
+      display: none;
+    }
   }
 </style>

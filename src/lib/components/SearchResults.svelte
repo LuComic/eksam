@@ -24,12 +24,25 @@
 {/if}
 
 <style>
+  h2 {
+    margin: 0 0 18px;
+    font-size: clamp(22px, 3vw, 30px);
+    letter-spacing: -0.04em;
+  }
+
   .task-row {
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 24px;
+    padding: 16px;
   }
 
   .task-row.shaded {
-    background: #f0f0f0;
+    border: 1px solid var(--line);
+    background: var(--soft);
+  }
+
+  @media (max-width: 900px) {
+    .task-row {
+      padding: 0;
+    }
   }
 </style>

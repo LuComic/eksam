@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { taskDisplayTitle } from '$lib/taskLabels';
-  import type { Task } from '$lib/types';
+  import { taskDisplayTitle } from "$lib/taskLabels";
+  import type { Task } from "$lib/types";
 
   type Props = {
     task: Task | null;
@@ -8,31 +8,41 @@
   };
 
   let { task, onGoToExam }: Props = $props();
-  let title = $derived(task ? taskDisplayTitle(task) : '');
-  let reviewLabel = $derived(task && task.year < 2014 ? 'might be buggy' : 'needs review');
+  let title = $derived(task ? taskDisplayTitle(task) : "");
+  let reviewLabel = $derived(
+    task && task.year < 2014 ? "might be buggy" : "needs review",
+  );
 </script>
 
 {#if task}
-  <article class="task">
-    <div class="meta">
-      <span class="task-label">{task.year}, part {task.part}, task {task.taskNumber}</span>
-      {#if onGoToExam}
-        <button type="button" onclick={() => onGoToExam?.(task)}>go to exam</button>
-      {/if}
+  <article class="task-block">
+    <div class="task-head">
+      <div class="num">{task.taskNumber}</div>
+      <div class="task-title">
+        <strong>{title}</strong>
+      </div>
       {#if task.needsReview}
-        <span>{reviewLabel}</span>
+        <span class="pill review">{reviewLabel}</span>
       {/if}
     </div>
-    <h2>{title}</h2>
+    <div class="meta-strip">
+      {#if onGoToExam}
+        <button type="button" onclick={() => onGoToExam?.(task)}
+          >go to exam</button
+        >
+      {/if}
+    </div>
     {#if task.taskImagePaths.length > 0}
       {#each task.taskImagePaths as image}
-        <img src={image} alt={title} />
+        <div class="pdf-crop"><img src={image} alt={title} /></div>
       {/each}
     {:else}
-      <p>No task crop found.</p>
-      {#if task.sourcePdf}
-        <p><a href={task.sourcePdf}>Open source PDF</a></p>
-      {/if}
+      <div class="pdf-crop">
+        <p>No task crop found.</p>
+        {#if task.sourcePdf}
+          <p><a href={task.sourcePdf}>Open source PDF</a></p>
+        {/if}
+      </div>
     {/if}
   </article>
 {:else}
@@ -40,29 +50,93 @@
 {/if}
 
 <style>
-  .meta {
-    display: flex;
-    gap: 0.5rem;
+  .task-block {
+    margin-bottom: 24px;
+  }
+
+  .task-head {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    gap: 12px;
     align-items: center;
-    margin: 0 0 0.5rem;
+    margin-bottom: 10px;
   }
 
-  .task-label {
-    margin-left: 0;
-    font-size: 1rem;
-    color: inherit;
+  .num {
+    display: grid;
+    place-items: center;
+    height: 38px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    font-size: 18px;
+    font-weight: 800;
   }
 
-  span {
-    margin-left: 0.5rem;
-    font-size: 0.85rem;
-    color: #8a5a00;
+  .task-title strong {
+    display: block;
+    font-size: 18px;
+  }
+
+  .task-title span {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .meta-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .pill,
+  button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 4px 9px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .pill.review {
+    color: var(--warn);
+    border-color: var(--warn);
+  }
+
+  .pdf-crop {
+    margin-bottom: 16px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    background: var(--white);
   }
 
   img {
     display: block;
     max-width: 100%;
-    margin: 0 0 1rem;
-    border: 1px solid #ddd;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    .task-head {
+      grid-template-columns: 52px 1fr;
+    }
+
+    .task-head .pill {
+      grid-column: 1 / -1;
+      width: fit-content;
+    }
+
+    .pdf-crop {
+      padding: 12px;
+    }
   }
 </style>

@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boxy Sidebar Exam Browser Mockup</title>
+    <style>
+      :root {
+        --ink: #182129;
+        --answers: #eef5f2;
+        --answer-ink: #1f4d3a;
+        --white: #ffffff;
+        --paper: #fefefd;
+        --line: #d8d8d2;
+        --muted: #6f756f;
+        --soft: #ecece7;
+        --warn: #8a5a12;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--white);
+        color: var(--ink);
+        line-height: 1.45;
+      }
+
+      .app {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+      }
+
+      aside {
+        border-right: 1px solid var(--line);
+        padding: 14px;
+        background: var(--white);
+      }
+
+      main {
+        padding: 22px 28px 44px;
+        background: var(--paper);
+      }
+
+      .answers {
+        background: var(--answers);
+        border-left: 1px solid #c9d8d0;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 4px;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-bottom: 6px;
+        font-size: clamp(24px, 3vw, 34px);
+        letter-spacing: -0.04em;
+      }
+
+      h3 {
+        margin: 24px 0 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .brand {
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      aside .field label,
+      aside .nav a,
+      aside .status {
+        font-size: 12px;
+      }
+
+      .brand small {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .field {
+        margin-bottom: 12px;
+      }
+
+      select,
+      button {
+        width: 100%;
+        min-height: 34px;
+        padding: 6px 8px;
+        border: 1px solid var(--line);
+        border-radius: 0;
+        background: var(--white);
+        color: var(--ink);
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      button.primary {
+        background: var(--ink);
+        border-color: var(--ink);
+        color: var(--white);
+      }
+
+      .year-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .year-grid button {
+        min-height: 32px;
+        text-align: center;
+      }
+
+      .year-grid .active {
+        background: var(--ink);
+        border-color: var(--ink);
+        color: var(--white);
+      }
+
+      .nav {
+        margin: 16px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .nav a {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .nav a.active span:first-child::before {
+        content: "→ ";
+      }
+
+      .status {
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .status strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--ink);
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 20px;
+        padding-bottom: 18px;
+        margin-bottom: 22px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar p {
+        margin-bottom: 0;
+      }
+
+      .tools {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .tools button,
+      .tools select {
+        width: auto;
+        min-width: 112px;
+      }
+
+      .check {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--ink);
+      }
+
+      .check input {
+        width: 16px;
+        height: 16px;
+        accent-color: var(--ink);
+      }
+
+      .meta-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 18px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        padding: 4px 9px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .pill.review {
+        color: var(--warn);
+        border-color: var(--warn);
+      }
+
+      .exam-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 42%);
+        gap: 22px;
+        align-items: start;
+      }
+
+      .task-block {
+        margin-bottom: 24px;
+      }
+
+      .task-head {
+        display: grid;
+        grid-template-columns: 52px 1fr auto;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .num {
+        display: grid;
+        place-items: center;
+        height: 38px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .task-title strong {
+        display: block;
+        font-size: 18px;
+      }
+
+      .task-title span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .pdf-crop {
+        padding: 28px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        min-height: 300px;
+      }
+
+      .answer-col {
+        position: sticky;
+        top: 20px;
+      }
+
+      .answer-col .pdf-crop {
+        min-height: 260px;
+        border-color: #c9d8d0;
+        border-left: 4px solid var(--answer-ink);
+        background: #fbfdfb;
+      }
+
+      .answer-col .num {
+        border-color: #c9d8d0;
+        color: var(--answer-ink);
+      }
+
+      .answer-col .formula {
+        border-left-color: var(--answer-ink);
+        background: #e4efe9;
+      }
+
+      .line {
+        height: 12px;
+        margin-bottom: 14px;
+        background: var(--line);
+      }
+
+      .line.s {
+        width: 38%;
+      }
+      .line.m {
+        width: 66%;
+      }
+      .line.l {
+        width: 92%;
+      }
+
+      .formula {
+        margin: 16px 0;
+        padding: 16px;
+        border-left: 4px solid var(--ink);
+        background: #f2f2f2;
+        font-family: "Courier New", monospace;
+        color: #222;
+      }
+
+      .empty-state {
+        margin-top: 28px;
+        padding: 22px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .empty-state strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 18px;
+      }
+
+      .mobile-note {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+        aside {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        main {
+          padding: 18px;
+        }
+        .topbar {
+          align-items: stretch;
+          flex-direction: column;
+        }
+        .tools {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .tools button,
+        .tools select {
+          width: 100%;
+          min-width: 0;
+        }
+        .exam-grid {
+          grid-template-columns: 1fr;
+        }
+        .answer-col {
+          position: static;
+        }
+        .task-head {
+          grid-template-columns: 52px 1fr;
+        }
+        .task-head .pill {
+          grid-column: 1 / -1;
+          width: fit-content;
+        }
+        .mobile-note {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside aria-label="Exam browser controls">
+        <div class="field">
+          <label for="mode">Mode</label>
+          <select id="mode">
+            <option>exam</option>
+            <option>single task</option>
+            <option>shuffle exam</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Year</label>
+          <div class="year-grid" aria-label="Choose exam year">
+            <button>2021</button>
+            <button>2022</button>
+            <button>2023</button>
+            <button>2024</button>
+            <button class="active">2025</button>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Exam sections">
+          <a class="active" href="#part-i"><span>Part I</span><span>7</span></a>
+          <a href="#part-ii"><span>Part II</span><span>5</span></a>
+          <a href="#answers"><span>Answers</span><span>separate</span></a>
+          <a href="#files"><span>Source PDFs</span><span>3</span></a>
+        </nav>
+
+        <div class="field">
+          <button class="primary">New shuffled exam</button>
+        </div>
+
+        <div class="status">
+          <strong>Data loaded</strong>
+          142 tasks available<br />Older than 2014 might be buggy<br />Last
+          extraction: today
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <h2>2025 mathematics exam</h2>
+
+          </div>
+          <div class="tools">
+            <label class="check"
+              ><input type="checkbox" checked /> Show answer</label
+            >
+            <button>Open Part I PDF</button>
+            <button>Open Part II PDF</button>
+          </div>
+        </header>
+
+        <div class="meta-strip" aria-label="Extraction summary">
+          <span class="pill">12 tasks detected</span>
+          <span class="pill">Part I: 7</span>
+          <span class="pill">Part II: 5</span>
+          <span class="pill review">pre-2014 exams might be buggy</span>
+        </div>
+
+        <section id="part-i" aria-labelledby="part-i-title">
+          <h3 id="part-i-title">Part I</h3>
+
+          <div class="exam-grid">
+            <div>
+              <article class="task-block">
+                <div class="task-head">
+                  <div class="num">1</div>
+                  <div class="task-title">
+                    <strong>Task 1</strong>
+                    <span>2025-laia-i.pdf · page 2</span>
+                  </div>
+                </div>
+                <div class="pdf-crop">
+                  <div class="line m"></div>
+                  <div class="line l"></div>
+                  <div class="line l"></div>
+                  <div class="formula">
+                    Simplify the expression and calculate its value.
+                  </div>
+                  <div class="line s"></div>
+                  <div class="line m"></div>
+                </div>
+              </article>
+
+              <article class="task-block">
+                <div class="task-head">
+                  <div class="num">2</div>
+                  <div class="task-title">
+                    <strong>Task 2</strong>
+                    <span>2025-laia-i.pdf · page 3</span>
+                  </div>
+                </div>
+                <div class="pdf-crop">
+                  <div class="line l"></div>
+                  <div class="line m"></div>
+                  <div class="formula">
+                    Solve the equation. Show all intermediate steps.
+                  </div>
+                  <div class="line l"></div>
+                  <div class="line s"></div>
+                </div>
+              </article>
+            </div>
+
+            <aside
+              class="answer-col answers"
+              id="answers"
+              aria-label="Answer pane"
+            >
+              <h3 style="margin-top: 0; color: var(--answer-ink)">Answers</h3>
+              <article class="task-block">
+                <div class="task-head">
+                  <div class="num">1</div>
+                  <div class="task-title">
+                    <strong>Answer 1</strong>
+                    <span>hindamisjuhend · page 5</span>
+                  </div>
+                </div>
+                <div class="pdf-crop">
+                  <div class="line m"></div>
+                  <div class="formula">
+                    Correct simplification: 24<br />Maximum: 2 points
+                  </div>
+                  <div class="line l"></div>
+                </div>
+              </article>
+
+              <article class="task-block">
+                <div class="task-head">
+                  <div class="num">2</div>
+                  <div class="task-title">
+                    <strong>Answer 2</strong>
+                    <span>likely matching crop</span>
+                  </div>
+                </div>
+                <div class="pdf-crop">
+                  <div class="line l"></div>
+                  <div class="formula">
+                    Solution steps and point distribution.
+                  </div>
+                  <div class="line s"></div>
+                </div>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section id="part-ii" aria-labelledby="part-ii-title">
+          <h3 id="part-ii-title">Part II</h3>
+          <article class="task-block">
+            <div class="task-head">
+              <div class="num">8</div>
+              <div class="task-title">
+                <strong>Task 8</strong>
+                <span>2025-laia-ii.pdf · page 1</span>
+              </div>
+            </div>
+            <div class="pdf-crop">
+              <div class="line l"></div>
+              <div class="line m"></div>
+              <div class="formula">
+                A longer geometry or function analysis task appears here as a
+                PDF crop.
+              </div>
+              <div class="line l"></div>
+              <div class="line s"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="empty-state" aria-label="Missing data example">
+          <strong>Empty state if extraction has not run</strong>
+          <p>
+            No extracted tasks found yet. Run <code>bun run pipeline</code>.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -138,9 +138,6 @@
       {#if exam.answerTablePdf}<a href={exam.answerTablePdf}>Answer table PDF</a
         >{/if}
     </p>
-    {#if exam.formatNote}
-      <p class="source-note">Source note: {exam.formatNote}</p>
-    {/if}
   {/if}
 
   {#if missingNotes.length > 0}
@@ -188,21 +185,57 @@
 <style>
   label {
     display: block;
-    margin: 1rem 0;
+    margin: 0 0 18px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  select {
+    display: block;
+    width: min(320px, 100%);
+    min-height: 34px;
+    margin-top: 6px;
+    padding: 6px 8px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+  }
+
+  h2 {
+    margin: 26px 0 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .pdfs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .pdfs a {
-    margin-right: 1rem;
-  }
-
-  .source-note {
-    font-style: italic;
+    padding: 4px 9px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
   }
 
   .notice {
-    border: 1px solid #ccc;
+    border: 1px solid var(--warn);
     padding: 0.75rem;
     margin: 1rem 0;
+    color: var(--warn);
+    background: var(--notice-bg);
   }
 
   .notice p {
@@ -212,21 +245,28 @@
   iframe {
     width: 100%;
     height: 85vh;
-    border: 1px solid #ddd;
+    border: 1px solid var(--line);
   }
 
-  .task-answer-pair {
-    margin-bottom: 2rem;
-    padding: 1rem;
-  }
-
+  .task-answer-pair,
   .task-row {
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid transparent;
   }
 
   .task-answer-pair.shaded,
   .task-row.shaded {
-    background: #f0f0f0;
+    border-color: var(--line);
+    background: var(--soft);
+  }
+
+  @media (max-width: 900px) {
+    .task-answer-pair,
+    .task-row {
+      padding: 0;
+      border: 0;
+      background: transparent !important;
+    }
   }
 </style>
