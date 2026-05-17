@@ -12,18 +12,12 @@ from urllib.parse import parse_qs, quote, unquote, urljoin, urlparse
 from urllib.error import URLError
 from urllib.request import Request, urlopen
 
+from sources import ARHMUS_MATERIALS, KOOL_MATERIALS, PROJEKTID_YEAR_PAGES
+
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = ROOT / "static"
 PDF_DIR = STATIC / "pdfs"
 DATA_DIR = STATIC / "data"
-
-YEAR_PAGES = {
-    2021: "https://projektid.edu.ee/spaces/THO/pages/322207772/Riigieksamite+materjalid+2021",
-    2022: "https://projektid.edu.ee/spaces/THO/pages/313819017/Riigieksamite+materjalid+2022",
-    2023: "https://projektid.edu.ee/spaces/THO/pages/313818909/Riigieksamite+materjalid+2023",
-    2024: "https://projektid.edu.ee/spaces/THO/pages/313818006/Riigieksamite+materjalid+2024",
-    2025: "https://projektid.edu.ee/spaces/THO/pages/313817358/Riigieksamite+materjalid+2025",
-}
 
 USER_AGENT = "Mozilla/5.0 exam-shuffler/0.1"
 
@@ -35,6 +29,7 @@ class PdfCandidate:
     filename: str
     url: str
     local_path: str
+    source: str = "projektid"
 
 
 def fetch_bytes(url: str) -> bytes:
@@ -102,8 +97,18 @@ def classify_pdf(filename: str) -> str | None:
 
 
 def local_pdf_name(year: int, kind: str) -> str:
-    suffix = {"part1": "laia-i", "part2": "laia-ii", "grading": "hindamisjuhend"}[kind]
+    suffix = {
+        "part1": "laia-i",
+        "part2": "laia-ii",
+        "grading": "hindamisjuhend",
+        "answerTable": "vastavustabel",
+    }[kind]
     return f"{year}-{suffix}.pdf"
+
+
+def local_document_name(year: int, kind: str, extension: str) -> str:
+    suffix = {"gradingDocx": "hindamisjuhend"}[kind]
+    return f"{year}-{suffix}.{extension}"
 
 
 def candidate_score(year: int, kind: str, filename: str) -> int:
@@ -138,25 +143,84 @@ def find_candidates(year: int, page_url: str) -> list[PdfCandidate]:
         local_path = f"/pdfs/{local_pdf_name(year, kind)}"
         current = candidates.get(kind)
         if current is None or candidate_score(year, kind, filename) > candidate_score(year, kind, current.filename):
-            candidates[kind] = PdfCandidate(year, kind, filename, download_url, local_path)
+            candidates[kind] = PdfCandidate(year, kind, filename, download_url, local_path, "projektid")
     return list(candidates.values())
+
+
+def direct_source_candidates(materials: list[dict[str, object]], source: str) -> dict[int, list[PdfCandidate]]:
+    key_to_kind = {
+        "part1PdfUrl": "part1",
+        "part2PdfUrl": "part2",
+        "gradingPdfUrl": "grading",
+        "answerTablePdfUrl": "answerTable",
+        "gradingDocxUrl": "gradingDocx",
+    }
+    candidates_by_year: dict[int, list[PdfCandidate]] = {}
+    for material in materials:
+        year = int(material["year"])
+        candidates: list[PdfCandidate] = []
+        for key, kind in key_to_kind.items():
+            url = material.get(key)
+            if not url:
+                continue
+            filename = unquote(Path(urlparse(str(url)).path).name)
+            if kind == "gradingDocx":
+                candidates.append(PdfCandidate(year, kind, filename, str(url), f"/pdfs/{local_document_name(year, kind, 'docx')}", source))
+            else:
+                candidates.append(PdfCandidate(year, kind, filename, str(url), f"/pdfs/{local_pdf_name(year, kind)}", source))
+        candidates_by_year[year] = candidates
+    return candidates_by_year
+
+
+def is_valid_pdf(path: Path) -> bool:
+    if not path.exists() or path.stat().st_size < 1024:
+        return False
+    with path.open("rb") as handle:
+        return handle.read(5) == b"%PDF-"
+
+
+def is_valid_download(path: Path) -> bool:
+    if path.suffix.casefold() == ".pdf":
+        return is_valid_pdf(path)
+    return path.exists() and path.stat().st_size >= 1024
 
 
 def download(candidates: Iterable[PdfCandidate]) -> None:
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     for candidate in candidates:
         target = PDF_DIR / Path(candidate.local_path).name
+        if is_valid_download(target):
+            print(f"skipping {candidate.year} {candidate.kind}: {target.name} already exists")
+            continue
         print(f"downloading {candidate.year} {candidate.kind}: {candidate.filename}")
         target.write_bytes(fetch_bytes(candidate.url))
 
 
 def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[str, object]]:
     exams: list[dict[str, object]] = []
-    for year, page_url in YEAR_PAGES.items():
+    for material in [*KOOL_MATERIALS, *ARHMUS_MATERIALS]:
+        year = int(material["year"])
         by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
         exams.append(
             {
                 "year": year,
+                "source": material.get("source", "arhmus"),
+                "part1Pdf": by_kind.get("part1"),
+                "part2Pdf": by_kind.get("part2"),
+                "gradingPdf": by_kind.get("grading"),
+                "gradingDocx": by_kind.get("gradingDocx"),
+                "answerTablePdf": by_kind.get("answerTable"),
+                "formatNote": material.get("formatNote"),
+                "sourcePageUrl": material.get("sourcePageUrl", "https://arhmus.tlu.ee/"),
+            }
+        )
+
+    for year, page_url in PROJEKTID_YEAR_PAGES.items():
+        by_kind = {candidate.kind: candidate.local_path for candidate in candidates_by_year.get(year, [])}
+        exams.append(
+            {
+                "year": year,
+                "source": "projektid",
                 "part1Pdf": by_kind.get("part1"),
                 "part2Pdf": by_kind.get("part2"),
                 "gradingPdf": by_kind.get("grading"),
@@ -168,8 +232,22 @@ def build_exams(candidates_by_year: dict[int, list[PdfCandidate]]) -> list[dict[
 
 def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    candidates_by_year: dict[int, list[PdfCandidate]] = {}
-    for year, page_url in YEAR_PAGES.items():
+    candidates_by_year = direct_source_candidates(KOOL_MATERIALS, "kool")
+    for year, candidates in candidates_by_year.items():
+        print(f"configured kool {year}")
+        for candidate in candidates:
+            print(f"  {candidate.kind}: {candidate.filename}")
+        download(candidates)
+
+    arhmus_by_year = direct_source_candidates(ARHMUS_MATERIALS, "arhmus")
+    candidates_by_year.update(arhmus_by_year)
+    for year, candidates in arhmus_by_year.items():
+        print(f"configured arhmus {year}")
+        for candidate in candidates:
+            print(f"  {candidate.kind}: {candidate.filename}")
+        download(candidates)
+
+    for year, page_url in PROJEKTID_YEAR_PAGES.items():
         print(f"fetching {year}")
         candidates = find_candidates(year, page_url)
         candidates_by_year[year] = candidates

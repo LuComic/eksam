@@ -1,7 +1,2622 @@
 [
   {
+    "id": "2007-i-1",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2007 part 1 task 1",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-1-p2.png"
+      },
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-1-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-1-p2.png",
+      "/generated/tasks/2007-i-1-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-2",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2007 part 1 task 2",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-2-p4.png"
+      },
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-2-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-2-p4.png",
+      "/generated/tasks/2007-i-2-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-3",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2007 part 1 task 3",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-3-p6.png"
+      },
+      {
+        "page": 7,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-3-p7.png"
+      },
+      {
+        "page": 8,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-3-p8.png"
+      },
+      {
+        "page": 9,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-3-p9.png"
+      },
+      {
+        "page": 10,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-3-p10.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-3-p6.png",
+      "/generated/tasks/2007-i-3-p7.png",
+      "/generated/tasks/2007-i-3-p8.png",
+      "/generated/tasks/2007-i-3-p9.png",
+      "/generated/tasks/2007-i-3-p10.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-4",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2007 part 1 task 4",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 12,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-4-p12.png"
+      },
+      {
+        "page": 13,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-4-p13.png"
+      },
+      {
+        "page": 14,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-4-p14.png"
+      },
+      {
+        "page": 15,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-4-p15.png"
+      },
+      {
+        "page": 16,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-4-p16.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-4-p12.png",
+      "/generated/tasks/2007-i-4-p13.png",
+      "/generated/tasks/2007-i-4-p14.png",
+      "/generated/tasks/2007-i-4-p15.png",
+      "/generated/tasks/2007-i-4-p16.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-5",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2007 part 1 task 5",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 17,
+        "crop": {
+          "x0": 30.0,
+          "y0": 38.099525451660156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p17.png"
+      },
+      {
+        "page": 18,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p18.png"
+      },
+      {
+        "page": 19,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p19.png"
+      },
+      {
+        "page": 20,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p20.png"
+      },
+      {
+        "page": 21,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p21.png"
+      },
+      {
+        "page": 22,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p22.png"
+      },
+      {
+        "page": 23,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-5-p23.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-5-p17.png",
+      "/generated/tasks/2007-i-5-p18.png",
+      "/generated/tasks/2007-i-5-p19.png",
+      "/generated/tasks/2007-i-5-p20.png",
+      "/generated/tasks/2007-i-5-p21.png",
+      "/generated/tasks/2007-i-5-p22.png",
+      "/generated/tasks/2007-i-5-p23.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-6",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2007 part 1 task 6",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 24,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-6-p24.png"
+      },
+      {
+        "page": 25,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-6-p25.png"
+      },
+      {
+        "page": 26,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-6-p26.png"
+      },
+      {
+        "page": 27,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-6-p27.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-6-p24.png",
+      "/generated/tasks/2007-i-6-p25.png",
+      "/generated/tasks/2007-i-6-p26.png",
+      "/generated/tasks/2007-i-6-p27.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-7",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2007 part 1 task 7",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 28,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.359535217285156,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p28.png"
+      },
+      {
+        "page": 29,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p29.png"
+      },
+      {
+        "page": 30,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p30.png"
+      },
+      {
+        "page": 31,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p31.png"
+      },
+      {
+        "page": 32,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p32.png"
+      },
+      {
+        "page": 33,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p33.png"
+      },
+      {
+        "page": 34,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p34.png"
+      },
+      {
+        "page": 35,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-7-p35.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-7-p28.png",
+      "/generated/tasks/2007-i-7-p29.png",
+      "/generated/tasks/2007-i-7-p30.png",
+      "/generated/tasks/2007-i-7-p31.png",
+      "/generated/tasks/2007-i-7-p32.png",
+      "/generated/tasks/2007-i-7-p33.png",
+      "/generated/tasks/2007-i-7-p34.png",
+      "/generated/tasks/2007-i-7-p35.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-9",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 9,
+    "title": "2007 part 1 task 9",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 36,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.340293884277344,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-9-p36.png"
+      },
+      {
+        "page": 37,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-9-p37.png"
+      },
+      {
+        "page": 38,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-9-p38.png"
+      },
+      {
+        "page": 39,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-9-p39.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-9-p36.png",
+      "/generated/tasks/2007-i-9-p37.png",
+      "/generated/tasks/2007-i-9-p38.png",
+      "/generated/tasks/2007-i-9-p39.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2007-i-10",
+    "year": 2007,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 10,
+    "title": "2007 part 1 task 10",
+    "sourcePdf": "/pdfs/2007-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 40,
+        "crop": {
+          "x0": 30.0,
+          "y0": 36.540313720703125,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-10-p40.png"
+      },
+      {
+        "page": 41,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-10-p41.png"
+      },
+      {
+        "page": 42,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-10-p42.png"
+      },
+      {
+        "page": 43,
+        "crop": {
+          "x0": 30.0,
+          "y0": 0.0,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2007-i-10-p43.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2007-i-10-p40.png",
+      "/generated/tasks/2007-i-10-p41.png",
+      "/generated/tasks/2007-i-10-p42.png",
+      "/generated/tasks/2007-i-10-p43.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-2",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2008 part 1 task 2",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 285.6965026855469,
+          "x1": 565.0,
+          "y1": 440.75653076171875
+        },
+        "image": "/generated/tasks/2008-i-2-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-2-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-3",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2008 part 1 task 3",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 375.75653076171875,
+          "x1": 565.0,
+          "y1": 543.3294372558594
+        },
+        "image": "/generated/tasks/2008-i-3-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-3-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-4",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2008 part 1 task 4",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 478.3294372558594,
+          "x1": 565.0,
+          "y1": 696.0380249023438
+        },
+        "image": "/generated/tasks/2008-i-4-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-4-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-5",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2008 part 1 task 5",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 631.0380249023438,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2008-i-5-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-5-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-7",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2008 part 1 task 7",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 204.53189086914062,
+          "x1": 565.0,
+          "y1": 382.0166931152344
+        },
+        "image": "/generated/tasks/2008-i-7-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-7-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-8",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 8,
+    "title": "2008 part 1 task 8",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 317.0166931152344,
+          "x1": 565.0,
+          "y1": 489.49188232421875
+        },
+        "image": "/generated/tasks/2008-i-8-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-8-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-i-9",
+    "year": 2008,
+    "source": "kool",
+    "part": 1,
+    "taskNumber": 9,
+    "title": "2008 part 1 task 9",
+    "sourcePdf": "/pdfs/2008-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 424.49188232421875,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2008-i-9-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-i-9-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-2",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 2,
+    "title": "2008 part 2 task 2",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 328.5365295410156,
+          "x1": 565.0,
+          "y1": 483.5965270996094
+        },
+        "image": "/generated/tasks/2008-ii-2-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-2-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-3",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 3,
+    "title": "2008 part 2 task 3",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 418.5965270996094,
+          "x1": 565.0,
+          "y1": 595.1694946289062
+        },
+        "image": "/generated/tasks/2008-ii-3-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-3-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-4",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 4,
+    "title": "2008 part 2 task 4",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 530.1694946289062,
+          "x1": 565.0,
+          "y1": 722.1380004882812
+        },
+        "image": "/generated/tasks/2008-ii-4-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-4-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-5",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 5,
+    "title": "2008 part 2 task 5",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 1,
+        "crop": {
+          "x0": 30.0,
+          "y0": 657.1380004882812,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2008-ii-5-p1.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-5-p1.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-7",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 7,
+    "title": "2008 part 2 task 7",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 233.31521606445312,
+          "x1": 565.0,
+          "y1": 402.11676025390625
+        },
+        "image": "/generated/tasks/2008-ii-7-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-7-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-8",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2008 part 2 task 8",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 337.11676025390625,
+          "x1": 565.0,
+          "y1": 548.5918884277344
+        },
+        "image": "/generated/tasks/2008-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-8-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2008-ii-9",
+    "year": 2008,
+    "source": "kool",
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2008 part 2 task 9",
+    "sourcePdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 483.5918884277344,
+          "x1": 565.0,
+          "y1": 802.0
+        },
+        "image": "/generated/tasks/2008-ii-9-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2008-ii-9-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-1",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2014 part 1 task 1",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.659709930419922,
+          "x1": 565.2750244140625,
+          "y1": 116.0
+        },
+        "image": "/generated/tasks/2014-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-2",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2014 part 1 task 2",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 418.552490234375,
+          "x1": 565.2750244140625,
+          "y1": 569.0
+        },
+        "image": "/generated/tasks/2014-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-3",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2014 part 1 task 3",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 24.444011688232422,
+          "x1": 1160.550048828125,
+          "y1": 245.0
+        },
+        "image": "/generated/tasks/2014-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-4",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2014 part 1 task 4",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 425.85205078125,
+          "x1": 1160.550048828125,
+          "y1": 538.0
+        },
+        "image": "/generated/tasks/2014-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-5",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2014 part 1 task 5",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.935527801513672,
+          "x1": 565.2750244140625,
+          "y1": 141.0
+        },
+        "image": "/generated/tasks/2014-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-6",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2014 part 1 task 6",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.935527801513672,
+          "x1": 1160.550048828125,
+          "y1": 141.0
+        },
+        "image": "/generated/tasks/2014-i-6-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-6-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2014-i-7",
+    "year": 2014,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2014 part 1 task 7",
+    "sourcePdf": "/pdfs/2014-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.709636688232422,
+          "x1": 565.2750244140625,
+          "y1": 198.0
+        },
+        "image": "/generated/tasks/2014-i-7-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2014-i-7-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-1",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2015 part 1 task 1",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443832397460938,
+          "x1": 565.2760009765625,
+          "y1": 116.0
+        },
+        "image": "/generated/tasks/2015-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-2",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2015 part 1 task 2",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 409.83685302734375,
+          "x1": 565.2760009765625,
+          "y1": 680.0
+        },
+        "image": "/generated/tasks/2015-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-3",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2015 part 1 task 3",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.228134155273438,
+          "x1": 565.2760009765625,
+          "y1": 144.0
+        },
+        "image": "/generated/tasks/2015-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-4",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2015 part 1 task 4",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 434.239990234375,
+          "x1": 565.2760009765625,
+          "y1": 552.0
+        },
+        "image": "/generated/tasks/2015-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-5",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2015 part 1 task 5",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719711303710938,
+          "x1": 565.2760009765625,
+          "y1": 184.0
+        },
+        "image": "/generated/tasks/2015-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-6",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2015 part 1 task 6",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719711303710938,
+          "x1": 565.2760009765625,
+          "y1": 142.0
+        },
+        "image": "/generated/tasks/2015-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-6-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-i-7",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2015 part 1 task 7",
+    "sourcePdf": "/pdfs/2015-laia-i.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493820190429688,
+          "x1": 565.2760009765625,
+          "y1": 170.0
+        },
+        "image": "/generated/tasks/2015-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-i-7-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-ii-1",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 1,
+    "title": "2015 part 2 task 1",
+    "sourcePdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443710327148438,
+          "x1": 565.2760009765625,
+          "y1": 170.0
+        },
+        "image": "/generated/tasks/2015-ii-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-ii-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-ii-2",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 2,
+    "title": "2015 part 2 task 2",
+    "sourcePdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.228012084960938,
+          "x1": 565.2760009765625,
+          "y1": 184.0
+        },
+        "image": "/generated/tasks/2015-ii-2-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-ii-2-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-ii-3",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 3,
+    "title": "2015 part 2 task 3",
+    "sourcePdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2760009765625,
+          "y1": 225.0
+        },
+        "image": "/generated/tasks/2015-ii-3-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-ii-3-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-ii-4",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 4,
+    "title": "2015 part 2 task 4",
+    "sourcePdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2760009765625,
+          "y1": 155.0
+        },
+        "image": "/generated/tasks/2015-ii-4-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-ii-4-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2015-ii-5",
+    "year": 2015,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 5,
+    "title": "2015 part 2 task 5",
+    "sourcePdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2015-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493698120117188,
+          "x1": 565.2760009765625,
+          "y1": 142.0
+        },
+        "image": "/generated/tasks/2015-ii-5-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2015-ii-5-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-1",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2016 part 1 task 1",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443710327148438,
+          "x1": 565.2750244140625,
+          "y1": 144.0
+        },
+        "image": "/generated/tasks/2016-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-2",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2016 part 1 task 2",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 424.31219482421875,
+          "x1": 565.2750244140625,
+          "y1": 524.0
+        },
+        "image": "/generated/tasks/2016-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-3",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2016 part 1 task 3",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 24.228012084960938,
+          "x1": 1160.550048828125,
+          "y1": 105.0
+        },
+        "image": "/generated/tasks/2016-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-4",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2016 part 1 task 4",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 434.239013671875,
+          "x1": 1160.550048828125,
+          "y1": 736.0
+        },
+        "image": "/generated/tasks/2016-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-5",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2016 part 1 task 5",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2750244140625,
+          "y1": 183.0
+        },
+        "image": "/generated/tasks/2016-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-6",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2016 part 1 task 6",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.719528198242188,
+          "x1": 1160.550048828125,
+          "y1": 169.0
+        },
+        "image": "/generated/tasks/2016-i-6-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-6-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-i-7",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2016 part 1 task 7",
+    "sourcePdf": "/pdfs/2016-laia-i.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493637084960938,
+          "x1": 565.2750244140625,
+          "y1": 170.0
+        },
+        "image": "/generated/tasks/2016-i-7-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-i-7-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-ii-1",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 1,
+    "title": "2016 part 2 task 1",
+    "sourcePdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443710327148438,
+          "x1": 565.2750244140625,
+          "y1": 212.0
+        },
+        "image": "/generated/tasks/2016-ii-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-ii-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-ii-2",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 2,
+    "title": "2016 part 2 task 2",
+    "sourcePdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 24.228012084960938,
+          "x1": 1160.550048828125,
+          "y1": 255.0
+        },
+        "image": "/generated/tasks/2016-ii-2-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-ii-2-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-ii-3",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 3,
+    "title": "2016 part 2 task 3",
+    "sourcePdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2750244140625,
+          "y1": 270.0
+        },
+        "image": "/generated/tasks/2016-ii-3-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-ii-3-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-ii-4",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 4,
+    "title": "2016 part 2 task 4",
+    "sourcePdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.719528198242188,
+          "x1": 1160.550048828125,
+          "y1": 211.0
+        },
+        "image": "/generated/tasks/2016-ii-4-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-ii-4-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2016-ii-5",
+    "year": 2016,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 5,
+    "title": "2016 part 2 task 5",
+    "sourcePdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2016-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493637084960938,
+          "x1": 565.2750244140625,
+          "y1": 127.0
+        },
+        "image": "/generated/tasks/2016-ii-5-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2016-ii-5-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-1",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2017 part 1 task 1",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443710327148438,
+          "x1": 565.2750244140625,
+          "y1": 143.0
+        },
+        "image": "/generated/tasks/2017-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-2",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2017 part 1 task 2",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 424.31219482421875,
+          "x1": 565.2750244140625,
+          "y1": 508.0
+        },
+        "image": "/generated/tasks/2017-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-3",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2017 part 1 task 3",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 24.228012084960938,
+          "x1": 1160.550048828125,
+          "y1": 370.0
+        },
+        "image": "/generated/tasks/2017-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-4",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2017 part 1 task 4",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 392.19183349609375,
+          "x1": 1160.550048828125,
+          "y1": 539.0
+        },
+        "image": "/generated/tasks/2017-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-5",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2017 part 1 task 5",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2750244140625,
+          "y1": 156.0
+        },
+        "image": "/generated/tasks/2017-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-6",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2017 part 1 task 6",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 33.60923767089844,
+          "x1": 1160.550048828125,
+          "y1": 438.0
+        },
+        "image": "/generated/tasks/2017-i-6-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-6-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-i-7",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2017 part 1 task 7",
+    "sourcePdf": "/pdfs/2017-laia-i.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493637084960938,
+          "x1": 565.2750244140625,
+          "y1": 295.0
+        },
+        "image": "/generated/tasks/2017-i-7-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-i-7-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-ii-1",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 1,
+    "title": "2017 part 2 task 1",
+    "sourcePdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443710327148438,
+          "x1": 565.2750244140625,
+          "y1": 140.0
+        },
+        "image": "/generated/tasks/2017-ii-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-ii-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-ii-2",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 2,
+    "title": "2017 part 2 task 2",
+    "sourcePdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 24.228012084960938,
+          "x1": 1160.550048828125,
+          "y1": 198.0
+        },
+        "image": "/generated/tasks/2017-ii-2-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-ii-2-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-ii-3",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 3,
+    "title": "2017 part 2 task 3",
+    "sourcePdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719528198242188,
+          "x1": 565.2750244140625,
+          "y1": 185.0
+        },
+        "image": "/generated/tasks/2017-ii-3-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-ii-3-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-ii-4",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 4,
+    "title": "2017 part 2 task 4",
+    "sourcePdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 625.2750244140625,
+          "y0": 25.719528198242188,
+          "x1": 1160.550048828125,
+          "y1": 169.0
+        },
+        "image": "/generated/tasks/2017-ii-4-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-ii-4-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2017-ii-5",
+    "year": 2017,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 5,
+    "title": "2017 part 2 task 5",
+    "sourcePdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": "",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493637084960938,
+          "x1": 565.2750244140625,
+          "y1": 142.0
+        },
+        "image": "/generated/tasks/2017-ii-5-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2017-ii-5-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-1",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 1,
+    "title": "2018 part 1 task 1",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443832397460938,
+          "x1": 565.2760009765625,
+          "y1": 114.0
+        },
+        "image": "/generated/tasks/2018-i-1-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-1-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-2",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 2,
+    "title": "2018 part 1 task 2",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 424.30926513671875,
+          "x1": 565.2760009765625,
+          "y1": 510.0
+        },
+        "image": "/generated/tasks/2018-i-2-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-2-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-3",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 3,
+    "title": "2018 part 1 task 3",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.228134155273438,
+          "x1": 565.2760009765625,
+          "y1": 115.0
+        },
+        "image": "/generated/tasks/2018-i-3-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-3-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-4",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 4,
+    "title": "2018 part 1 task 4",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 392.19622802734375,
+          "x1": 565.2760009765625,
+          "y1": 524.0
+        },
+        "image": "/generated/tasks/2018-i-4-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-4-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-5",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 5,
+    "title": "2018 part 1 task 5",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719711303710938,
+          "x1": 565.2760009765625,
+          "y1": 184.0
+        },
+        "image": "/generated/tasks/2018-i-5-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-5-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-6",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 6,
+    "title": "2018 part 1 task 6",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 33.60942077636719,
+          "x1": 565.2760009765625,
+          "y1": 382.0
+        },
+        "image": "/generated/tasks/2018-i-6-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-6-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-i-7",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 1,
+    "taskNumber": 7,
+    "title": "2018 part 1 task 7",
+    "sourcePdf": "/pdfs/2018-laia-i.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493820190429688,
+          "x1": 565.2760009765625,
+          "y1": 142.0
+        },
+        "image": "/generated/tasks/2018-i-7-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-i-7-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-ii-8",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 8,
+    "title": "2018 part 2 task 8",
+    "sourcePdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 2,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.443832397460938,
+          "x1": 565.2760009765625,
+          "y1": 368.0
+        },
+        "image": "/generated/tasks/2018-ii-8-p2.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-ii-8-p2.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-ii-9",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 9,
+    "title": "2018 part 2 task 9",
+    "sourcePdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 3,
+        "crop": {
+          "x0": 30.0,
+          "y0": 24.228134155273438,
+          "x1": 565.2760009765625,
+          "y1": 226.0
+        },
+        "image": "/generated/tasks/2018-ii-9-p3.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-ii-9-p3.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-ii-10",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 10,
+    "title": "2018 part 2 task 10",
+    "sourcePdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 4,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719711303710938,
+          "x1": 565.2760009765625,
+          "y1": 234.0
+        },
+        "image": "/generated/tasks/2018-ii-10-p4.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-ii-10-p4.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-ii-11",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 11,
+    "title": "2018 part 2 task 11",
+    "sourcePdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 5,
+        "crop": {
+          "x0": 30.0,
+          "y0": 25.719711303710938,
+          "x1": 565.2760009765625,
+          "y1": 183.0
+        },
+        "image": "/generated/tasks/2018-ii-11-p5.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-ii-11-p5.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
+    "id": "2018-ii-12",
+    "year": 2018,
+    "source": "arhmus",
+    "part": 2,
+    "taskNumber": 12,
+    "title": "2018 part 2 task 12",
+    "sourcePdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": "/pdfs/2018-vastavustabel.pdf",
+    "taskPieces": [
+      {
+        "page": 6,
+        "crop": {
+          "x0": 30.0,
+          "y0": 23.493820190429688,
+          "x1": 565.2760009765625,
+          "y1": 156.0
+        },
+        "image": "/generated/tasks/2018-ii-12-p6.png"
+      }
+    ],
+    "answerPieces": [],
+    "taskImagePaths": [
+      "/generated/tasks/2018-ii-12-p6.png"
+    ],
+    "answerImagePaths": [],
+    "extractionConfidence": "medium",
+    "needsReview": true
+  },
+  {
     "id": "2021-i-1",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 1,
     "title": "2021 part 1 task 1",
@@ -30,6 +2645,7 @@
   {
     "id": "2021-i-2",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 2,
     "title": "2021 part 1 task 2",
@@ -58,6 +2674,7 @@
   {
     "id": "2021-i-3",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 3,
     "title": "2021 part 1 task 3",
@@ -86,6 +2703,7 @@
   {
     "id": "2021-i-4",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 4,
     "title": "2021 part 1 task 4",
@@ -114,6 +2732,7 @@
   {
     "id": "2021-i-5",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 5,
     "title": "2021 part 1 task 5",
@@ -142,6 +2761,7 @@
   {
     "id": "2021-i-6",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 6,
     "title": "2021 part 1 task 6",
@@ -170,6 +2790,7 @@
   {
     "id": "2021-i-7",
     "year": 2021,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 7,
     "title": "2021 part 1 task 7",
@@ -198,6 +2819,7 @@
   {
     "id": "2021-ii-8",
     "year": 2021,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 8,
     "title": "2021 part 2 task 8",
@@ -226,6 +2848,7 @@
   {
     "id": "2021-ii-9",
     "year": 2021,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 9,
     "title": "2021 part 2 task 9",
@@ -254,6 +2877,7 @@
   {
     "id": "2021-ii-10",
     "year": 2021,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 10,
     "title": "2021 part 2 task 10",
@@ -282,6 +2906,7 @@
   {
     "id": "2021-ii-11",
     "year": 2021,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 11,
     "title": "2021 part 2 task 11",
@@ -310,6 +2935,7 @@
   {
     "id": "2021-ii-12",
     "year": 2021,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 12,
     "title": "2021 part 2 task 12",
@@ -338,6 +2964,7 @@
   {
     "id": "2022-i-1",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 1,
     "title": "2022 part 1 task 1",
@@ -379,6 +3006,7 @@
   {
     "id": "2022-i-2",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 2,
     "title": "2022 part 1 task 2",
@@ -420,6 +3048,7 @@
   {
     "id": "2022-i-3",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 3,
     "title": "2022 part 1 task 3",
@@ -461,6 +3090,7 @@
   {
     "id": "2022-i-4",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 4,
     "title": "2022 part 1 task 4",
@@ -502,6 +3132,7 @@
   {
     "id": "2022-i-5",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 5,
     "title": "2022 part 1 task 5",
@@ -554,6 +3185,7 @@
   {
     "id": "2022-i-6",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 6,
     "title": "2022 part 1 task 6",
@@ -606,6 +3238,7 @@
   {
     "id": "2022-i-7",
     "year": 2022,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 7,
     "title": "2022 part 1 task 7",
@@ -647,6 +3280,7 @@
   {
     "id": "2022-ii-8",
     "year": 2022,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 8,
     "title": "2022 part 2 task 8",
@@ -699,6 +3333,7 @@
   {
     "id": "2022-ii-9",
     "year": 2022,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 9,
     "title": "2022 part 2 task 9",
@@ -751,6 +3386,7 @@
   {
     "id": "2022-ii-10",
     "year": 2022,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 10,
     "title": "2022 part 2 task 10",
@@ -803,6 +3439,7 @@
   {
     "id": "2022-ii-11",
     "year": 2022,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 11,
     "title": "2022 part 2 task 11",
@@ -855,6 +3492,7 @@
   {
     "id": "2022-ii-12",
     "year": 2022,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 12,
     "title": "2022 part 2 task 12",
@@ -896,6 +3534,7 @@
   {
     "id": "2023-i-1",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 1,
     "title": "2023 part 1 task 1",
@@ -937,6 +3576,7 @@
   {
     "id": "2023-i-2",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 2,
     "title": "2023 part 1 task 2",
@@ -978,6 +3618,7 @@
   {
     "id": "2023-i-3",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 3,
     "title": "2023 part 1 task 3",
@@ -1019,6 +3660,7 @@
   {
     "id": "2023-i-4",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 4,
     "title": "2023 part 1 task 4",
@@ -1060,6 +3702,7 @@
   {
     "id": "2023-i-5",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 5,
     "title": "2023 part 1 task 5",
@@ -1112,6 +3755,7 @@
   {
     "id": "2023-i-6",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 6,
     "title": "2023 part 1 task 6",
@@ -1153,6 +3797,7 @@
   {
     "id": "2023-i-7",
     "year": 2023,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 7,
     "title": "2023 part 1 task 7",
@@ -1194,6 +3839,7 @@
   {
     "id": "2023-ii-8",
     "year": 2023,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 8,
     "title": "2023 part 2 task 8",
@@ -1246,6 +3892,7 @@
   {
     "id": "2023-ii-9",
     "year": 2023,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 9,
     "title": "2023 part 2 task 9",
@@ -1287,6 +3934,7 @@
   {
     "id": "2023-ii-10",
     "year": 2023,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 10,
     "title": "2023 part 2 task 10",
@@ -1328,6 +3976,7 @@
   {
     "id": "2023-ii-11",
     "year": 2023,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 11,
     "title": "2023 part 2 task 11",
@@ -1369,6 +4018,7 @@
   {
     "id": "2023-ii-12",
     "year": 2023,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 12,
     "title": "2023 part 2 task 12",
@@ -1410,6 +4060,7 @@
   {
     "id": "2024-i-1",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 1,
     "title": "2024 part 1 task 1",
@@ -1451,6 +4102,7 @@
   {
     "id": "2024-i-2",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 2,
     "title": "2024 part 1 task 2",
@@ -1492,6 +4144,7 @@
   {
     "id": "2024-i-3",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 3,
     "title": "2024 part 1 task 3",
@@ -1533,6 +4186,7 @@
   {
     "id": "2024-i-4",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 4,
     "title": "2024 part 1 task 4",
@@ -1574,6 +4228,7 @@
   {
     "id": "2024-i-5",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 5,
     "title": "2024 part 1 task 5",
@@ -1626,6 +4281,7 @@
   {
     "id": "2024-i-6",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 6,
     "title": "2024 part 1 task 6",
@@ -1678,6 +4334,7 @@
   {
     "id": "2024-i-7",
     "year": 2024,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 7,
     "title": "2024 part 1 task 7",
@@ -1719,6 +4376,7 @@
   {
     "id": "2024-ii-8",
     "year": 2024,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 8,
     "title": "2024 part 2 task 8",
@@ -1771,6 +4429,7 @@
   {
     "id": "2024-ii-9",
     "year": 2024,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 9,
     "title": "2024 part 2 task 9",
@@ -1812,6 +4471,7 @@
   {
     "id": "2024-ii-10",
     "year": 2024,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 10,
     "title": "2024 part 2 task 10",
@@ -1853,6 +4513,7 @@
   {
     "id": "2024-ii-11",
     "year": 2024,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 11,
     "title": "2024 part 2 task 11",
@@ -1894,6 +4555,7 @@
   {
     "id": "2024-ii-12",
     "year": 2024,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 12,
     "title": "2024 part 2 task 12",
@@ -1935,6 +4597,7 @@
   {
     "id": "2025-i-1",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 1,
     "title": "2025 part 1 task 1",
@@ -1976,6 +4639,7 @@
   {
     "id": "2025-i-2",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 2,
     "title": "2025 part 1 task 2",
@@ -2017,6 +4681,7 @@
   {
     "id": "2025-i-3",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 3,
     "title": "2025 part 1 task 3",
@@ -2058,6 +4723,7 @@
   {
     "id": "2025-i-4",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 4,
     "title": "2025 part 1 task 4",
@@ -2099,6 +4765,7 @@
   {
     "id": "2025-i-5",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 5,
     "title": "2025 part 1 task 5",
@@ -2151,6 +4818,7 @@
   {
     "id": "2025-i-6",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 6,
     "title": "2025 part 1 task 6",
@@ -2192,6 +4860,7 @@
   {
     "id": "2025-i-7",
     "year": 2025,
+    "source": "projektid",
     "part": 1,
     "taskNumber": 7,
     "title": "2025 part 1 task 7",
@@ -2233,6 +4902,7 @@
   {
     "id": "2025-ii-8",
     "year": 2025,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 8,
     "title": "2025 part 2 task 8",
@@ -2285,6 +4955,7 @@
   {
     "id": "2025-ii-9",
     "year": 2025,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 9,
     "title": "2025 part 2 task 9",
@@ -2337,6 +5008,7 @@
   {
     "id": "2025-ii-10",
     "year": 2025,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 10,
     "title": "2025 part 2 task 10",
@@ -2378,6 +5050,7 @@
   {
     "id": "2025-ii-11",
     "year": 2025,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 11,
     "title": "2025 part 2 task 11",
@@ -2419,6 +5092,7 @@
   {
     "id": "2025-ii-12",
     "year": 2025,
+    "source": "projektid",
     "part": 2,
     "taskNumber": 12,
     "title": "2025 part 2 task 12",

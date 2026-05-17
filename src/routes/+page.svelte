@@ -98,7 +98,6 @@
           <div class="nav">
             <button type="button" onclick={previousTask}>previous</button>
             <button type="button" onclick={nextTask}>next</button>
-            <button type="button" onclick={resetSingleTask}>new random</button>
           </div>
           {#if showAnswer}
             <TaskAnswerRow task={currentTask} />

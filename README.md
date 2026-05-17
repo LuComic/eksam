@@ -1,8 +1,8 @@
 # Estonian Math Exam Shuffler
 
-Private SvelteKit study site for practicing Estonian wide-course mathematics state exam tasks from 2021-2025.
+Private SvelteKit study site for practicing Estonian wide-course mathematics state exam tasks from 2014-2025.
 
-The app uses real local data only. It downloads PDFs from `projektid.edu.ee`, extracts task and grading regions with PyMuPDF, writes JSON under `static/data/`, and renders PNG crops in the browser.
+The app uses real local data only. It downloads PDFs from `projektid.edu.ee` and `arhmus.tlu.ee`, extracts task and grading regions with PyMuPDF, writes JSON under `static/data/`, and renders PNG crops in the browser.
 
 ## Install
 
@@ -79,13 +79,17 @@ bun run preview
 
 ## Adding A New Year
 
-Add the year page URL to `YEAR_PAGES` in `scripts/fetch_materials.py`, then run:
+Add newer `projektid.edu.ee` year pages to `PROJEKTID_YEAR_PAGES` in `scripts/sources.py`.
+
+Add older direct `arhmus.tlu.ee` PDF URLs to `ARHMUS_MATERIALS` in `scripts/sources.py`. Entries can be partial; use `part1PdfUrl`, `part2PdfUrl`, `gradingPdfUrl`, and `answerTablePdfUrl` as available.
+
+Then run:
 
 ```bash
 bun run pipeline
 ```
 
-The fetch script extracts PDF links from the page HTML and handles both Confluence preview URLs and direct `/download/attachments/...` URLs.
+The fetch script extracts `projektid.edu.ee` PDF links from page HTML and handles both Confluence preview URLs and direct `/download/attachments/...` URLs. `arhmus.tlu.ee` materials are downloaded from the direct PDF URLs configured in `scripts/sources.py`.
 
 ## Fixing Extraction
 

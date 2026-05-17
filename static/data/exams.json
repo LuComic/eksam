@@ -1,6 +1,106 @@
 [
   {
+    "year": 2007,
+    "source": "kool",
+    "part1Pdf": "/pdfs/2007-laia-i.pdf",
+    "part2Pdf": null,
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": null,
+    "formatNote": "ülesanded koos lahenduste ja kommentaaridega",
+    "sourcePageUrl": "https://www.kool.ee/?243="
+  },
+  {
+    "year": 2008,
+    "source": "kool",
+    "part1Pdf": "/pdfs/2008-laia-i.pdf",
+    "part2Pdf": "/pdfs/2008-laia-ii.pdf",
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": null,
+    "formatNote": "I ja II variant, ainult ülesanded",
+    "sourcePageUrl": "https://www.kool.ee/?243="
+  },
+  {
+    "year": 2014,
+    "source": "arhmus",
+    "part1Pdf": "/pdfs/2014-laia-i.pdf",
+    "part2Pdf": null,
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": null,
+    "formatNote": "I ja II variant, ainult ülesanded",
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/21/"
+  },
+  {
+    "year": 2015,
+    "source": "arhmus",
+    "part1Pdf": "/pdfs/2015-laia-i.pdf",
+    "part2Pdf": "/pdfs/2015-laia-ii.pdf",
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": "/pdfs/2015-vastavustabel.pdf",
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/26/"
+  },
+  {
+    "year": 2016,
+    "source": "arhmus",
+    "part1Pdf": "/pdfs/2016-laia-i.pdf",
+    "part2Pdf": "/pdfs/2016-laia-ii.pdf",
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": "/pdfs/2016-vastavustabel.pdf",
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/53/"
+  },
+  {
+    "year": 2017,
+    "source": "arhmus",
+    "part1Pdf": "/pdfs/2017-laia-i.pdf",
+    "part2Pdf": "/pdfs/2017-laia-ii.pdf",
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": null,
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/65/"
+  },
+  {
+    "year": 2018,
+    "source": "arhmus",
+    "part1Pdf": "/pdfs/2018-laia-i.pdf",
+    "part2Pdf": "/pdfs/2018-laia-ii.pdf",
+    "gradingPdf": null,
+    "gradingDocx": null,
+    "answerTablePdf": "/pdfs/2018-vastavustabel.pdf",
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/24/"
+  },
+  {
+    "year": 2019,
+    "source": "arhmus",
+    "part1Pdf": null,
+    "part2Pdf": null,
+    "gradingPdf": "/pdfs/2019-hindamisjuhend.pdf",
+    "gradingDocx": null,
+    "answerTablePdf": null,
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/42/"
+  },
+  {
+    "year": 2020,
+    "source": "arhmus",
+    "part1Pdf": null,
+    "part2Pdf": null,
+    "gradingPdf": null,
+    "gradingDocx": "/pdfs/2020-hindamisjuhend.docx",
+    "answerTablePdf": "/pdfs/2020-vastavustabel.pdf",
+    "formatNote": null,
+    "sourcePageUrl": "https://arhmus.tlu.ee/tlibrary/f/text/98/"
+  },
+  {
     "year": 2021,
+    "source": "projektid",
     "part1Pdf": "/pdfs/2021-laia-i.pdf",
     "part2Pdf": "/pdfs/2021-laia-ii.pdf",
     "gradingPdf": "/pdfs/2021-hindamisjuhend.pdf",
@@ -8,6 +108,7 @@
   },
   {
     "year": 2022,
+    "source": "projektid",
     "part1Pdf": "/pdfs/2022-laia-i.pdf",
     "part2Pdf": "/pdfs/2022-laia-ii.pdf",
     "gradingPdf": "/pdfs/2022-hindamisjuhend.pdf",
@@ -15,6 +116,7 @@
   },
   {
     "year": 2023,
+    "source": "projektid",
     "part1Pdf": "/pdfs/2023-laia-i.pdf",
     "part2Pdf": "/pdfs/2023-laia-ii.pdf",
     "gradingPdf": "/pdfs/2023-hindamisjuhend.pdf",
@@ -22,6 +124,7 @@
   },
   {
     "year": 2024,
+    "source": "projektid",
     "part1Pdf": "/pdfs/2024-laia-i.pdf",
     "part2Pdf": "/pdfs/2024-laia-ii.pdf",
     "gradingPdf": "/pdfs/2024-hindamisjuhend.pdf",
@@ -29,6 +132,7 @@
   },
   {
     "year": 2025,
+    "source": "projektid",
     "part1Pdf": "/pdfs/2025-laia-i.pdf",
     "part2Pdf": "/pdfs/2025-laia-ii.pdf",
     "gradingPdf": "/pdfs/2025-hindamisjuhend.pdf",

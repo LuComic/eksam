@@ -1,10 +1,16 @@
 export type Mode = 'single-task' | 'exam' | 'shuffle-exam';
 
+export type ExamSource = 'projektid' | 'arhmus' | 'kool';
+
 export type Exam = {
   year: number;
+  source?: ExamSource;
   part1Pdf?: string;
   part2Pdf?: string;
   gradingPdf?: string;
+  gradingDocx?: string;
+  answerTablePdf?: string;
+  formatNote?: string;
   sourcePageUrl: string;
 };
 
@@ -24,6 +30,7 @@ export type PageCrop = {
 export type Task = {
   id: string;
   year: number;
+  source?: ExamSource;
   part: 1 | 2;
   taskNumber: number;
   title: string;

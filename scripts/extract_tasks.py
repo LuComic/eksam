@@ -228,6 +228,7 @@ def crop_pieces(
     prefix: str,
     *,
     full_width: bool = False,
+    boundary_padding: float = 0,
 ) -> tuple[list[dict[str, Any]], list[str]]:
     pieces: list[dict[str, Any]] = []
     images: list[str] = []
@@ -257,7 +258,7 @@ def crop_pieces(
                 boundary_on_page = effective_next
 
         if boundary_on_page and page_index == boundary_on_page.page_index:
-            y1 = boundary_on_page.y
+            y1 = boundary_on_page.y + boundary_padding
         else:
             y1 = page.rect.height - 30
 
@@ -306,9 +307,11 @@ def starts_by_number(starts: list[Start]) -> dict[int, Start]:
 def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Start], grading_doc: fitz.Document | None) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     pdf_path_value = exam.get("part1Pdf" if part == 1 else "part2Pdf")
     year = int(exam["year"])
+    source = str(exam.get("source") or "projektid")
     expected = 7 if part == 1 else 5
     report: dict[str, Any] = {
         "year": year,
+        "source": source,
         "part": part,
         "detectedTaskCount": 0,
         "expectedTaskCount": expected,
@@ -316,6 +319,8 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
         "lowConfidenceTasks": [],
         "sourcePdfPath": pdf_path_value,
         "gradingPdfPath": exam.get("gradingPdf"),
+        "gradingDocxPath": exam.get("gradingDocx"),
+        "answerTablePdfPath": exam.get("answerTablePdf"),
     }
     if not pdf_path_value:
         report["missingTasks"] = list(range(1, expected + 1))
@@ -329,6 +334,8 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
     tasks: list[dict[str, Any]] = []
     with fitz.open(source_pdf) as document:
         starts = detect_starts(document)
+        if not starts and source in {"arhmus", "kool"}:
+            starts = detect_starts(document, allow_number_only=True)
         report["detectedTaskCount"] = len(starts)
         detected_numbers = {start.number for start in starts}
         if starts:
@@ -341,7 +348,14 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
         for index, start in enumerate(starts):
             next_start = starts[index + 1] if index + 1 < len(starts) else None
             task_id = f"{year}-{'i' if part == 1 else 'ii'}-{start.number}"
-            task_pieces, task_images = crop_pieces(document, start, next_start, TASK_DIR, task_id)
+            task_pieces, task_images = crop_pieces(
+                document,
+                start,
+                next_start,
+                TASK_DIR,
+                task_id,
+                boundary_padding=55 if source == "kool" else 0,
+            )
 
             answer_pieces: list[dict[str, Any]] = []
             answer_images: list[str] = []
@@ -370,11 +384,12 @@ def extract_part(exam: dict[str, Any], part: int, grading_starts: dict[int, Star
                 {
                     "id": task_id,
                     "year": year,
+                    "source": source,
                     "part": part,
                     "taskNumber": start.number,
                     "title": f"{year} part {part} task {start.number}",
                     "sourcePdf": str(pdf_path_value),
-                    "gradingPdf": str(exam.get("gradingPdf") or ""),
+                    "gradingPdf": str(exam.get("gradingPdf") or exam.get("answerTablePdf") or ""),
                     "taskPieces": task_pieces,
                     "answerPieces": answer_pieces,
                     "taskImagePaths": task_images,
@@ -409,7 +424,7 @@ def main() -> int:
     for exam in exams:
         grading_doc = None
         grading_starts: dict[int, Start] = {}
-        grading_pdf = exam.get("gradingPdf")
+        grading_pdf = exam.get("gradingPdf") or exam.get("answerTablePdf")
         if grading_pdf:
             grading_path = STATIC / str(grading_pdf).lstrip("/")
             if grading_path.exists():
