@@ -52,9 +52,20 @@
       shownTasks.length === 0 &&
       !!(exam.gradingPdf || exam.gradingDocx || exam.answerTablePdf),
   );
+  let hasSolutionMaterial = $derived(
+    !!(
+      exam?.gradingPdf ||
+      exam?.gradingDocx ||
+      exam?.answerTablePdf ||
+      exam?.formatNote?.toLowerCase().includes("lahenduste ja kommentaaridega")
+    ),
+  );
   let missingNotes = $derived.by(() => {
     if (!year) return [];
     const notes: string[] = [];
+    if (!hasSolutionMaterial) {
+      notes.push(`Could not find grading/solutions material for ${year}.`);
+    }
     for (const part of [1, 2] as const) {
       const partTasks = shownTasks.filter((task) => task.part === part);
       const hasPdf = part === 1 ? exam?.part1Pdf : exam?.part2Pdf;
