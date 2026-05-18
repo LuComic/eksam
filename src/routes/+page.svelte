@@ -246,7 +246,7 @@
     <header class="topbar">
       <div>
         {#if mode === "" && !searchTerm}
-          <h2>Vali formaat vasakult</h2>
+          <h2>Vali formaat, et alustada</h2>
           <p class="warning">
             Eksamid mis on varasemad kui 2014 voivad olla buggy ja imeliku
             formaadiga
