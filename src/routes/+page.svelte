@@ -153,7 +153,7 @@
 <div class="app-shell">
   <aside class="sidebar" aria-label="Exam browser controls">
     <div class="field">
-      <label for="mode">Mode</label>
+      <label for="mode">Formaat</label>
       <select
         id="mode"
         value={mode}
@@ -164,16 +164,16 @@
           )}
       >
         <option value=""></option>
-        <option value="single-task">single task</option>
-        <option value="exam">exam</option>
-        <option value="shuffle-exam">shuffle exam</option>
+        <option value="single-task">Yksik ylesanne</option>
+        <option value="exam">Eksam</option>
+        <option value="shuffle-exam">Suvaline eksam</option>
       </select>
     </div>
 
     {#if mode}
       <label class="check">
         <input type="checkbox" bind:checked={showAnswer} />
-        answers
+        Naita vastuseid
       </label>
     {/if}
 
@@ -184,7 +184,7 @@
         search();
       }}
     >
-      <label for="search">Search</label>
+      <label for="search">Otsing</label>
       <div class="search-row">
         <input
           id="search"
@@ -192,12 +192,12 @@
           bind:value={searchInput}
           aria-label="search tasks"
         />
-        <button type="submit">Search</button>
+        <button type="submit">Otsi</button>
       </div>
     </form>
 
     <nav class="exam-list" aria-label="Available exams">
-      <h3>Exams</h3>
+      <h3>Eksamid</h3>
       <ul>
         {#each examYears as year, index (year)}
           {@const yearTasks = tasksByYear.get(year) ?? []}
@@ -240,43 +240,35 @@
         {/each}
       </ul>
     </nav>
-
-    <div class="status">
-      <strong
-        >{loading ? "Loading" : hasTasks ? "Data loaded" : "No data"}</strong
-      >
-      {tasks.length} tasks available
-    </div>
   </aside>
 
   <main class:answers-view={showAnswer}>
     <header class="topbar">
       <div>
         {#if mode === "" && !searchTerm}
-          <h2>Choose a mode</h2>
-          <p>Select a mode from the sidebar to start.</p>
+          <h2>Vali formaat vasakult</h2>
           <p class="warning">
             Eksamid mis on varasemad kui 2014 voivad olla buggy ja imeliku
             formaadiga
           </p>
         {:else if mode === "single-task"}
-          <h2>Single task</h2>
-          <p>One shuffled task at a time.</p>
+          <h2>Yksik ylesanne</h2>
+          <p>Yks suvaline ylesanne korraga</p>
         {:else if mode === "exam"}
-          <h2>Exam</h2>
-          <p>Pick a year and view the full exam.</p>
+          <h2>Eksam</h2>
+          <p>Kindla aasta taielik eksam</p>
         {:else if mode === "shuffle-exam"}
-          <h2>Shuffle exam</h2>
-          <p>A new exam made from tasks across years.</p>
+          <h2>Suvaline eksam</h2>
+          <p>Tais eksam, mis koosneb erinevate aastate ylesannetest</p>
         {:else}
-          <h2>Search results</h2>
+          <h2>Otsing</h2>
         {/if}
       </div>
 
       {#if mode === "single-task" && hasTasks}
         <div class="tools nav">
-          <button type="button" onclick={previousTask}>previous</button>
-          <button type="button" onclick={nextTask}>next</button>
+          <button type="button" onclick={previousTask}>Eelmine</button>
+          <button type="button" onclick={nextTask}>Jargmine</button>
         </div>
       {/if}
     </header>
