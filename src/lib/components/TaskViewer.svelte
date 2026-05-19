@@ -5,9 +5,10 @@
   type Props = {
     task: Task | null;
     onGoToExam?: (task: Task) => void;
+    onGoToTask?: (task: Task) => void;
   };
 
-  let { task, onGoToExam }: Props = $props();
+  let { task, onGoToExam, onGoToTask }: Props = $props();
   let title = $derived(task ? taskDisplayTitle(task) : "");
   let reviewLabel = $derived(
     task && task.year < 2014 ? "might be buggy" : "needs review",
@@ -26,9 +27,14 @@
       {/if}
     </div>
     <div class="meta-strip">
+      {#if onGoToTask}
+        <button type="button" onclick={() => onGoToTask?.(task)}
+          >Yksik ylesanne</button
+        >
+      {/if}
       {#if onGoToExam}
         <button type="button" onclick={() => onGoToExam?.(task)}
-          >go to exam</button
+          >Selle aasta eksam</button
         >
       {/if}
     </div>

@@ -6,9 +6,10 @@
     tasks: Task[];
     term: string;
     onGoToExam?: (task: Task) => void;
+    onGoToTask?: (task: Task) => void;
   };
 
-  let { tasks, term, onGoToExam }: Props = $props();
+  let { tasks, term, onGoToExam, onGoToTask }: Props = $props();
 </script>
 
 <h2>Search for {term}</h2>
@@ -18,7 +19,7 @@
 {:else}
   {#each tasks as task, index (task.id)}
     <div class="task-row" class:shaded={index % 2 !== 0}>
-      <TaskViewer {task} {onGoToExam} />
+      <TaskViewer {task} {onGoToExam} {onGoToTask} />
     </div>
   {/each}
 {/if}

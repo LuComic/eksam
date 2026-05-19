@@ -5725,13 +5725,24 @@
           "y1": 595.3200073242188
         },
         "image": "/generated/answers/2022-ii-12-p18.png"
+      },
+      {
+        "page": 19,
+        "crop": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 841.9199829101562,
+          "y1": 595.3200073242188
+        },
+        "image": "/generated/answers/2022-ii-12-p19.png"
       }
     ],
     "taskImagePaths": [
       "/generated/tasks/2022-ii-12-p6.png"
     ],
     "answerImagePaths": [
-      "/generated/answers/2022-ii-12-p18.png"
+      "/generated/answers/2022-ii-12-p18.png",
+      "/generated/answers/2022-ii-12-p19.png"
     ],
     "extractionConfidence": "high",
     "needsReview": false

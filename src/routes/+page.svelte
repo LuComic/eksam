@@ -285,6 +285,7 @@
           tasks={searchResults}
           term={searchTerm}
           onGoToExam={goToExam}
+          onGoToTask={selectTask}
         />
       {:else if mode === "single-task"}
         {#if showAnswer}

@@ -353,11 +353,13 @@ def answer_page_pieces(
 ) -> tuple[list[dict[str, Any]], list[str]]:
     pieces: list[dict[str, Any]] = []
     images: list[str] = []
-    end_page = (next_start.page_index - 1) if next_start and next_start.page_index > start.page_index else start.page_index
+    end_page = (next_start.page_index - 1) if next_start and next_start.page_index > start.page_index else document.page_count - 1
     end_page = min(max(start.page_index, end_page), document.page_count - 1)
 
     for page_index in range(start.page_index, end_page + 1):
         page = document.load_page(page_index)
+        if page_index != start.page_index and is_lisaleht_page(page):
+            continue
         image_path = directory / f"{prefix}-p{page_index + 1}.png"
         crop, image = render_full_page(page, image_path)
         pieces.append({"page": page_index + 1, "crop": crop, "image": image})
