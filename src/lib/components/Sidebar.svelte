@@ -1,0 +1,325 @@
+<script lang="ts">
+  import { appState } from "$lib/appState.svelte";
+  import type { Mode } from "$lib/types";
+
+  let innerWidth = $state(0);
+  const mobileBreakpoint = 900;
+</script>
+
+<svelte:window bind:innerWidth />
+
+{#if innerWidth > mobileBreakpoint}
+  <aside class="desktop-sidebar" aria-label="Exam browser controls">
+    <button class="closing font-medium ml-auto">Close</button>
+    <div class="field">
+      <label for="mode">Formaat</label>
+      <select
+        class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+        id="mode"
+        value={appState.mode}
+        aria-label="mode"
+        onchange={(event) =>
+          appState.changeMode(
+            (event.currentTarget as HTMLSelectElement).value as Mode | "",
+          )}
+      >
+        <option value=""></option>
+        <option value="single-task">Yksik ylesanne</option>
+        <option value="exam">Eksam</option>
+        <option value="shuffle-exam">Suvaline eksam</option>
+      </select>
+    </div>
+
+    {#if appState.mode}
+      <label class="check">
+        <input type="checkbox" bind:checked={appState.showAnswer} />
+        Naita vastuseid
+      </label>
+    {/if}
+
+    <form
+      class="search field"
+      onsubmit={(event) => {
+        event.preventDefault();
+        appState.search();
+      }}
+    >
+      <label for="search">Otsing</label>
+      <div class="search-row">
+        <input
+          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+          id="search"
+          type="search"
+          bind:value={appState.searchInput}
+          aria-label="search tasks"
+        />
+        <button
+          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit] font-bold"
+          type="submit">Otsi</button
+        >
+      </div>
+    </form>
+
+    <nav class="exam-list" aria-label="Available exams">
+      <h3>Eksamid</h3>
+      <ul>
+        {#each appState.examYears as year, index (year)}
+          {@const yearTasks = appState.tasksByYear.get(year) ?? []}
+          {@const isExpanded = appState.expandedExamYears.includes(year)}
+          <li>
+            <div class={`exam-list-row ${index % 2 !== 0 ? "gray-bg" : null}`}>
+              <button
+                class="year-link"
+                type="button"
+                onclick={() => appState.selectExamYear(year)}
+              >
+                {year} Eksam
+              </button>
+              <button
+                class="expand-button"
+                type="button"
+                aria-expanded={isExpanded}
+                aria-label={`${isExpanded ? "Collapse" : "Expand"} ${year} tasks`}
+                onclick={() => appState.toggleExamYear(year)}
+              >
+                &gt;
+              </button>
+            </div>
+            {#if isExpanded}
+              {#if yearTasks.length > 0}
+                <ul class="task-dropdown">
+                  {#each yearTasks as task (task.id)}
+                    <li>
+                      <button
+                        type="button"
+                        onclick={() => appState.selectTask(task)}
+                      >
+                        Part {task.part === 1 ? "I" : "II"}, task {task.taskNumber}
+                      </button>
+                    </li>
+                  {/each}
+                </ul>
+              {:else}
+                <p class="no-year-tasks">No extracted tasks</p>
+              {/if}
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </nav>
+  </aside>
+{:else}
+  <aside
+    class="sidebar mobile-sidebar"
+    aria-label="Mobile exam browser controls"
+  >
+    <div class="field">
+      <label for="mobile-mode">Formaat</label>
+      <select
+        class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+        id="mobile-mode"
+        value={appState.mode}
+        aria-label="mode"
+        onchange={(event) =>
+          appState.changeMode(
+            (event.currentTarget as HTMLSelectElement).value as Mode | "",
+          )}
+      >
+        <option value=""></option>
+        <option value="single-task">Yksik ylesanne</option>
+        <option value="exam">Eksam</option>
+        <option value="shuffle-exam">Suvaline eksam</option>
+      </select>
+    </div>
+
+    {#if appState.mode}
+      <label class="check">
+        <input type="checkbox" bind:checked={appState.showAnswer} />
+        Naita vastuseid
+      </label>
+    {/if}
+
+    <form
+      class="search field"
+      onsubmit={(event) => {
+        event.preventDefault();
+        appState.search();
+      }}
+    >
+      <label for="mobile-search">Otsing</label>
+      <div class="search-row">
+        <input
+          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+          id="mobile-search"
+          type="search"
+          bind:value={appState.searchInput}
+          aria-label="search tasks"
+        />
+        <button
+          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+          type="submit">Otsi</button
+        >
+      </div>
+    </form>
+  </aside>
+{/if}
+
+<style>
+  .sidebar {
+    border-right: 1px solid var(--line);
+    padding: 14px;
+    background: var(--white);
+    width: auto;
+  }
+
+  .desktop-sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px var(--line) solid;
+    padding: 14px;
+    background-color: var(--white);
+    width: auto;
+    gap: 14px;
+  }
+
+  label,
+  h3,
+  .field > label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .check {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 16px;
+    color: var(--ink);
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .check input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--ink);
+  }
+
+  .search-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  .search-row input {
+    min-width: 200px;
+    width: 200px;
+  }
+
+  .search-row input::-webkit-search-cancel-button,
+  .search-row input::-webkit-search-decoration {
+    appearance: none;
+    display: none;
+  }
+
+  .search-row button {
+    padding: 2px;
+  }
+
+  .exam-list {
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  .exam-list h3 {
+    margin: 0 0 8px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .exam-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .exam-list-row {
+    display: flex;
+    gap: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px black solid;
+  }
+
+  .year-link {
+    min-height: auto;
+    padding: 2px 0;
+    border: none;
+    background: transparent;
+    text-align: left;
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .expand-button {
+    min-height: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-weight: normal;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .task-dropdown {
+    margin: 0 0 8px 12px !important;
+  }
+
+  .task-dropdown button {
+    border-width: 0 0 1px 0;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .no-year-tasks {
+    margin: 0 0 8px 12px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .gray-bg {
+    background-color: var(--soft);
+  }
+
+  .mobile-sidebar {
+    order: 2;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    padding: 10px;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .mobile-sidebar .field {
+    margin-bottom: 8px;
+  }
+
+  .mobile-sidebar .check {
+    margin-bottom: 8px;
+  }
+
+  .mobile-sidebar .search-row input {
+    min-width: 300px;
+  }
+
+  .mobile-sidebar .search-row button {
+    width: 100%;
+  }
+</style>
