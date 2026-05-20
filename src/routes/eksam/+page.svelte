@@ -18,17 +18,14 @@
   });
 </script>
 
-<header class="topbar">
-  <div>
-    {#if isShuffle}
-      <h2 class="font-semibold text-2xl mb-1.5">Suvaline eksam</h2>
-      <p>Tais eksam, mis koosneb erinevate aastate ylesannetest</p>
-    {:else}
+{#if !isShuffle}
+  <header class="topbar">
+    <div>
       <h2 class="font-semibold text-2xl mb-1.5">Eksam</h2>
       <p>Kindla aasta taielik eksam</p>
-    {/if}
-  </div>
-</header>
+    </div>
+  </header>
+{/if}
 
 {#if appState.loading}
   <div class="empty-state"><strong>Loading materials…</strong></div>

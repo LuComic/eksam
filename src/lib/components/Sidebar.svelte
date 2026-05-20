@@ -207,9 +207,9 @@
     border-right: 1px var(--line) solid;
     padding: 14px;
     background-color: var(--white);
-    width: auto;
     gap: 14px;
     width: 350px;
+    min-width: 350px;
   }
 
   label,

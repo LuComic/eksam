@@ -105,8 +105,15 @@
     return String(availableYear);
   }
 
+  function handleYearChange(event: Event) {
+    const value = (event.currentTarget as HTMLSelectElement).value;
+    const nextYear = value ? Number(value) : "";
+    year = nextYear;
+    onYearChange?.(nextYear);
+  }
+
   $effect(() => {
-    if (selectedYear && selectedYear !== year) {
+    if (selectedYear !== year) {
       year = selectedYear;
     }
   });
@@ -119,7 +126,7 @@
 {#if showYearSelect}
   <label>
     Year
-    <select bind:value={year} onchange={() => onYearChange?.(year)}>
+    <select value={year} onchange={handleYearChange}>
       <option value="">Select year</option>
       {#each availableYears as availableYear}
         <option value={availableYear}>{yearLabel(availableYear)}</option>
@@ -208,8 +215,7 @@
 
   h2 {
     margin: 22px 0 12px;
-    padding-top: 12px;
-    border-top: 1px solid var(--line);
+    font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
   }
