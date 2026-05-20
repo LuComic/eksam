@@ -1,10 +1,24 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { appState } from "$lib/appState.svelte";
   import type { Mode } from "$lib/types";
 
   let innerWidth = $state(0);
   const mobileBreakpoint = 900;
-  let open = $state(false);
+  const sidebarOpenStorageKey = "sidebar-open";
+  let open = $state(true);
+
+  onMount(() => {
+    const savedOpen = localStorage.getItem(sidebarOpenStorageKey);
+    if (savedOpen !== null) {
+      open = savedOpen === "true";
+    }
+  });
+
+  function setSidebarOpen(value: boolean) {
+    open = value;
+    localStorage.setItem(sidebarOpenStorageKey, String(value));
+  }
 </script>
 
 <svelte:window bind:innerWidth />
@@ -14,7 +28,7 @@
     <aside class="desktop-sidebar" aria-label="Exam browser controls">
       <button
         class="closing font-bold w-full min-h-8.5 text-xs uppercase border px-2 py-1.5 border-(--line) hover:cursor-pointer"
-        onclick={() => (open = false)}
+        onclick={() => setSidebarOpen(false)}
       >
         Sulge
       </button>
@@ -120,7 +134,7 @@
   {:else}
     <button
       class="closing font-bold w-max min-h-8.5 h-max ml-3.5 mt-3.5 text-xs uppercase border px-2 py-1.5 border-(--line) hover:cursor-pointer top-5 left-5"
-      onclick={() => (open = true)}>Ava</button
+      onclick={() => setSidebarOpen(true)}>Ava</button
     >
   {/if}
 {:else}
@@ -202,10 +216,13 @@
   h3,
   .field > label {
     display: block;
-    margin-bottom: 6px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  .field > label:not(.check) {
+    margin-bottom: 6px;
   }
 
   .check {

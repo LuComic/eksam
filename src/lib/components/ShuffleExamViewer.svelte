@@ -24,9 +24,14 @@
   });
 </script>
 
-<button class="primary" type="button" onclick={reshuffle} disabled={tasks.length === 0}
-  >reshuffle</button
+<button
+  class="primary"
+  type="button"
+  onclick={reshuffle}
+  disabled={tasks.length === 0}
 >
+  Sega
+</button>
 
 {#if selected.length === 0}
   <p>No extracted tasks found for shuffle exam.</p>

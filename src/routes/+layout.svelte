@@ -18,8 +18,6 @@
     }
     if (!appState.mode) {
       appState.showAnswer = false;
-      appState.searchInput = "";
-      appState.searchTerm = "";
     }
   });
 </script>

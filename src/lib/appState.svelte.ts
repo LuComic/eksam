@@ -1,3 +1,4 @@
+import { goto } from "$app/navigation";
 import { loadMaterials } from "$lib/data";
 import { shuffle } from "$lib/random";
 import { taskDisplayTitle } from "$lib/taskLabels";
@@ -79,16 +80,26 @@ class AppState {
       (this.currentIndex - 1 + this.shuffledTasks.length) %
       this.shuffledTasks.length;
     this.answerTasks = this.currentTask ? [this.currentTask] : [];
+    if (this.currentTask)
+      goto(`/ylesanne?id=${encodeURIComponent(this.currentTask.id)}`, {
+        replaceState: true,
+      });
   }
 
   nextTask() {
     if (this.shuffledTasks.length === 0) return;
     this.currentIndex = (this.currentIndex + 1) % this.shuffledTasks.length;
     this.answerTasks = this.currentTask ? [this.currentTask] : [];
+    if (this.currentTask)
+      goto(`/ylesanne?id=${encodeURIComponent(this.currentTask.id)}`, {
+        replaceState: true,
+      });
   }
 
   search() {
-    this.searchTerm = this.searchInput.trim();
+    const term = this.searchInput.trim();
+    this.searchTerm = term;
+    if (term) goto(`/search?q=${encodeURIComponent(term)}`);
   }
 
   goToExam(task: Task) {
@@ -100,6 +111,7 @@ class AppState {
     this.searchInput = "";
     this.searchTerm = "";
     this.mode = "exam";
+    goto(`/eksam?year=${year}`);
   }
 
   toggleExamYear(year: number) {
@@ -108,7 +120,7 @@ class AppState {
       : [...this.expandedExamYears, year];
   }
 
-  selectTask(task: Task) {
+  setCurrentTask(task: Task) {
     this.shuffledTasks = [
       task,
       ...shuffle(this.tasks.filter((item) => item.id !== task.id)),
@@ -121,6 +133,11 @@ class AppState {
     this.mode = "single-task";
   }
 
+  selectTask(task: Task) {
+    this.setCurrentTask(task);
+    goto(`/ylesanne?id=${encodeURIComponent(task.id)}`);
+  }
+
   changeMode(nextMode: Mode | "") {
     this.mode = nextMode;
     this.searchInput = "";
@@ -128,6 +145,10 @@ class AppState {
     if (nextMode !== "exam") {
       this.selectedExamYear = "";
     }
+    if (!nextMode) goto("/");
+    if (nextMode === "single-task") goto("/ylesanne");
+    if (nextMode === "exam") goto("/eksam");
+    if (nextMode === "shuffle-exam") goto("/eksam?type=shuffle-exam");
   }
 }
 

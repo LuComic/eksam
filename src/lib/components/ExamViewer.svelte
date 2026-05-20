@@ -10,6 +10,7 @@
     showAnswers?: boolean;
     selectedYear?: number | "";
     onSelectionChange?: (tasks: Task[]) => void;
+    onYearChange?: (year: number | "") => void;
   };
 
   let {
@@ -19,6 +20,7 @@
     showAnswers = false,
     selectedYear = "",
     onSelectionChange,
+    onYearChange,
   }: Props = $props();
   let year = $state<number | "">("");
 
@@ -117,7 +119,7 @@
 {#if showYearSelect}
   <label>
     Year
-    <select bind:value={year}>
+    <select bind:value={year} onchange={() => onYearChange?.(year)}>
       <option value="">Select year</option>
       {#each availableYears as availableYear}
         <option value={availableYear}>{yearLabel(availableYear)}</option>
