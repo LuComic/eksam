@@ -58,9 +58,11 @@
   p {
     margin-top: 0;
   }
+
   p {
     color: var(--muted);
   }
+
   .topbar {
     display: flex;
     justify-content: space-between;
@@ -70,9 +72,19 @@
     margin-bottom: 22px;
     border-bottom: 1px solid var(--line);
   }
+
+  @media (max-width: 900px) {
+    .topbar {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
+  }
+
   .topbar p {
     margin-bottom: 0;
   }
+
   .empty-state {
     margin-top: 28px;
     padding: 22px 0;

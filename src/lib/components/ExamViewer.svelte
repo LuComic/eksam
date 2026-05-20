@@ -207,7 +207,7 @@
   }
 
   h2 {
-    margin: 26px 0 12px;
+    margin: 22px 0 12px;
     padding-top: 12px;
     border-top: 1px solid var(--line);
     font-size: 16px;

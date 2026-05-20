@@ -47,6 +47,15 @@
     margin-bottom: 22px;
     border-bottom: 1px solid var(--line);
   }
+
+  @media (max-width: 900px) {
+    .topbar {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
+  }
+
   .empty-state {
     margin-top: 28px;
     padding: 22px 0;

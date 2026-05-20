@@ -22,7 +22,7 @@
   });
 </script>
 
-<div class="app-shell">
+<div class="container">
   <Sidebar />
   <main>
     {@render children()}
@@ -30,19 +30,20 @@
 </div>
 
 <style>
-  .app-shell {
+  .container {
     min-height: 100vh;
+    width: 100%;
     display: flex;
   }
 
   main {
+    flex: 1 1 0;
     padding: 22px 28px 44px;
-    width: 100%;
     background: var(--paper);
   }
 
   @media (max-width: 900px) {
-    .app-shell {
+    .container {
       display: flex;
       flex-direction: column;
       min-height: 100vh;

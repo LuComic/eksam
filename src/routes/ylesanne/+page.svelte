@@ -87,19 +87,6 @@
     cursor: pointer;
   }
 
-  button {
-    width: 100%;
-    min-height: 34px;
-    padding: 6px 8px;
-    border: 1px solid var(--line);
-    border-radius: 0;
-    background: var(--white);
-    color: var(--ink);
-    font: inherit;
-    cursor: pointer;
-    font-weight: 700;
-  }
-
   .topbar {
     display: flex;
     justify-content: space-between;
@@ -108,6 +95,14 @@
     padding-bottom: 18px;
     margin-bottom: 22px;
     border-bottom: 1px solid var(--line);
+  }
+
+  @media (max-width: 900px) {
+    .topbar {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
   }
 
   .topbar p {

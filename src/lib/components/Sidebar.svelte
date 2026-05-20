@@ -209,7 +209,7 @@
     background-color: var(--white);
     width: auto;
     gap: 14px;
-    width: 400px;
+    width: 350px;
   }
 
   label,
@@ -246,18 +246,18 @@
   }
 
   .search-row input {
-    min-width: 220px;
-    width: 220px;
+    min-width: 250px;
+    width: 250px;
+  }
+
+  .search-row button {
+    padding: 2px;
   }
 
   .search-row input::-webkit-search-cancel-button,
   .search-row input::-webkit-search-decoration {
     appearance: none;
     display: none;
-  }
-
-  .search-row button {
-    padding: 2px;
   }
 
   .exam-list {

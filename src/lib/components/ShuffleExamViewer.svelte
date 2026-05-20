@@ -43,7 +43,6 @@
   .primary {
     width: auto;
     min-height: 34px;
-    margin-bottom: 18px;
     padding: 6px 10px;
     border: 1px solid var(--ink);
     border-radius: 0;
