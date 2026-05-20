@@ -188,7 +188,6 @@
     margin: 0 0 18px;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -211,7 +210,6 @@
     border-top: 1px solid var(--line);
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
   }
 
   .pdfs {

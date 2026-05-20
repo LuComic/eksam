@@ -27,8 +27,7 @@
 <style>
   h2 {
     margin: 0 0 18px;
-    font-size: clamp(22px, 3vw, 30px);
-    letter-spacing: -0.04em;
+    font-size: 30px;
   }
 
   .task-row {

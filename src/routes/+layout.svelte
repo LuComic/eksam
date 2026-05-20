@@ -34,12 +34,12 @@
 <style>
   .app-shell {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
+    display: flex;
   }
 
   main {
     padding: 22px 28px 44px;
+    width: 100%;
     background: var(--paper);
   }
 

@@ -60,7 +60,6 @@
     border-top: 1px solid var(--answer-line);
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
   }
 
   img {

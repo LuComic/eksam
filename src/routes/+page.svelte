@@ -10,22 +10,22 @@
 <header class="topbar">
   <div>
     {#if appState.mode === "" && !appState.searchTerm}
-      <h2>Vali formaat, et alustada</h2>
+      <h2 class="font-semibold text-2xl mb-1.5">Vali formaat, et alustada</h2>
       <p class="warning">
         Eksamid mis on varasemad kui 2014 voivad olla buggy ja imeliku
         formaadiga
       </p>
     {:else if appState.mode === "single-task"}
-      <h2>Yksik ylesanne</h2>
+      <h2 class="font-semibold text-2xl mb-1.5">Yksik ylesanne</h2>
       <p>Yks suvaline ylesanne korraga</p>
     {:else if appState.mode === "exam"}
-      <h2>Eksam</h2>
+      <h2 class="font-semibold text-2xl mb-1.5">Eksam</h2>
       <p>Kindla aasta taielik eksam</p>
     {:else if appState.mode === "shuffle-exam"}
-      <h2>Suvaline eksam</h2>
+      <h2 class="font-semibold text-2xl mb-1.5">Suvaline eksam</h2>
       <p>Tais eksam, mis koosneb erinevate aastate ylesannetest</p>
     {:else}
-      <h2>Otsing</h2>
+      <h2 class="font-semibold text-2xl mb-1.5">Otsing</h2>
     {/if}
   </div>
 
@@ -87,12 +87,6 @@
   h2,
   p {
     margin-top: 0;
-  }
-
-  h2 {
-    margin-bottom: 6px;
-    font-size: clamp(24px, 3vw, 34px);
-    letter-spacing: -0.04em;
   }
 
   p {

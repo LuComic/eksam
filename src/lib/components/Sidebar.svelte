@@ -4,110 +4,125 @@
 
   let innerWidth = $state(0);
   const mobileBreakpoint = 900;
+  let open = $state(false);
 </script>
 
 <svelte:window bind:innerWidth />
 
 {#if innerWidth > mobileBreakpoint}
-  <aside class="desktop-sidebar" aria-label="Exam browser controls">
-    <button class="closing font-medium ml-auto">Close</button>
-    <div class="field">
-      <label for="mode">Formaat</label>
-      <select
-        class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
-        id="mode"
-        value={appState.mode}
-        aria-label="mode"
-        onchange={(event) =>
-          appState.changeMode(
-            (event.currentTarget as HTMLSelectElement).value as Mode | "",
-          )}
+  {#if open}
+    <aside class="desktop-sidebar" aria-label="Exam browser controls">
+      <button
+        class="closing font-bold w-full min-h-8.5 text-xs uppercase border px-2 py-1.5 border-(--line) hover:cursor-pointer"
+        onclick={() => (open = false)}
       >
-        <option value=""></option>
-        <option value="single-task">Yksik ylesanne</option>
-        <option value="exam">Eksam</option>
-        <option value="shuffle-exam">Suvaline eksam</option>
-      </select>
-    </div>
-
-    {#if appState.mode}
-      <label class="check">
-        <input type="checkbox" bind:checked={appState.showAnswer} />
-        Naita vastuseid
-      </label>
-    {/if}
-
-    <form
-      class="search field"
-      onsubmit={(event) => {
-        event.preventDefault();
-        appState.search();
-      }}
-    >
-      <label for="search">Otsing</label>
-      <div class="search-row">
-        <input
-          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
-          id="search"
-          type="search"
-          bind:value={appState.searchInput}
-          aria-label="search tasks"
-        />
-        <button
-          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit] font-bold"
-          type="submit">Otsi</button
+        Sulge
+      </button>
+      <div class="field">
+        <label for="mode">Formaat</label>
+        <select
+          class="w-full min-h-8.5 px-2 py-1.5 border border-(--line) rounded-none bg-(--white) text-(--ink)"
+          id="mode"
+          value={appState.mode}
+          aria-label="mode"
+          onchange={(event) =>
+            appState.changeMode(
+              (event.currentTarget as HTMLSelectElement).value as Mode | "",
+            )}
         >
+          <option value=""></option>
+          <option value="single-task">Yksik ylesanne</option>
+          <option value="exam">Eksam</option>
+          <option value="shuffle-exam">Suvaline eksam</option>
+        </select>
       </div>
-    </form>
 
-    <nav class="exam-list" aria-label="Available exams">
-      <h3>Eksamid</h3>
-      <ul>
-        {#each appState.examYears as year, index (year)}
-          {@const yearTasks = appState.tasksByYear.get(year) ?? []}
-          {@const isExpanded = appState.expandedExamYears.includes(year)}
-          <li>
-            <div class={`exam-list-row ${index % 2 !== 0 ? "gray-bg" : null}`}>
-              <button
-                class="year-link"
-                type="button"
-                onclick={() => appState.selectExamYear(year)}
+      {#if appState.mode}
+        <label class="check">
+          <input type="checkbox" bind:checked={appState.showAnswer} />
+          Naita vastuseid
+        </label>
+      {/if}
+
+      <form
+        class="search field"
+        onsubmit={(event) => {
+          event.preventDefault();
+          appState.search();
+        }}
+      >
+        <label for="search">Otsing</label>
+        <div class="search-row">
+          <input
+            class="w-full min-h-8.5 px-2 py-1.5 border border-(--line) rounded-none bg-(--white) text-(--ink)"
+            id="search"
+            type="search"
+            bind:value={appState.searchInput}
+            aria-label="search tasks"
+          />
+          <button
+            class="font-bold w-full min-h-8.5 text-xs uppercase border px-2 py-1.5 border-(--line) bg-(--white) text-(--ink)"
+            type="submit">Otsi</button
+          >
+        </div>
+      </form>
+
+      <nav class="exam-list" aria-label="Available exams">
+        <h3>Eksamid</h3>
+        <ul>
+          {#each appState.examYears as year, index (year)}
+            {@const yearTasks = appState.tasksByYear.get(year) ?? []}
+            {@const isExpanded = appState.expandedExamYears.includes(year)}
+            <li>
+              <div
+                class={`exam-list-row ${index % 2 !== 0 ? "gray-bg" : null}`}
               >
-                {year} Eksam
-              </button>
-              <button
-                class="expand-button"
-                type="button"
-                aria-expanded={isExpanded}
-                aria-label={`${isExpanded ? "Collapse" : "Expand"} ${year} tasks`}
-                onclick={() => appState.toggleExamYear(year)}
-              >
-                &gt;
-              </button>
-            </div>
-            {#if isExpanded}
-              {#if yearTasks.length > 0}
-                <ul class="task-dropdown">
-                  {#each yearTasks as task (task.id)}
-                    <li>
-                      <button
-                        type="button"
-                        onclick={() => appState.selectTask(task)}
-                      >
-                        Part {task.part === 1 ? "I" : "II"}, task {task.taskNumber}
-                      </button>
-                    </li>
-                  {/each}
-                </ul>
-              {:else}
-                <p class="no-year-tasks">No extracted tasks</p>
+                <button
+                  class="year-link"
+                  type="button"
+                  onclick={() => appState.selectExamYear(year)}
+                >
+                  {year} Eksam
+                </button>
+                <button
+                  class="expand-button"
+                  type="button"
+                  aria-expanded={isExpanded}
+                  aria-label={`${isExpanded ? "Collapse" : "Expand"} ${year} tasks`}
+                  onclick={() => appState.toggleExamYear(year)}
+                >
+                  &gt;
+                </button>
+              </div>
+              {#if isExpanded}
+                {#if yearTasks.length > 0}
+                  <ul class="task-dropdown">
+                    {#each yearTasks as task (task.id)}
+                      <li>
+                        <button
+                          type="button"
+                          onclick={() => appState.selectTask(task)}
+                        >
+                          Part {task.part === 1 ? "I" : "II"}, task {task.taskNumber}
+                        </button>
+                      </li>
+                    {/each}
+                  </ul>
+                {:else}
+                  <p class="no-year-tasks">No extracted tasks</p>
+                {/if}
               {/if}
-            {/if}
-          </li>
-        {/each}
-      </ul>
-    </nav>
-  </aside>
+            </li>
+          {/each}
+        </ul>
+      </nav>
+    </aside>
+  {:else}
+    <button
+      class="closing font-bold w-max min-h-8.5 h-max ml-3.5 mt-3.5 text-xs uppercase border px-2 py-1.5 border-(--line) hover:cursor-pointer top-5 left-5"
+      onclick={() => (open = true)}>Ava</button
+    >
+  {/if}
 {:else}
   <aside
     class="sidebar mobile-sidebar"
@@ -116,7 +131,7 @@
     <div class="field">
       <label for="mobile-mode">Formaat</label>
       <select
-        class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+        class="w-full min-h-8.5 px-2 py-1.5 border border-(--line) rounded-none bg-(--white) text-(--ink)"
         id="mobile-mode"
         value={appState.mode}
         aria-label="mode"
@@ -149,14 +164,14 @@
       <label for="mobile-search">Otsing</label>
       <div class="search-row">
         <input
-          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+          class="w-full min-h-8.5 px-2 py-1.5 border border-(--line) rounded-none bg-(--white) text-(--ink)"
           id="mobile-search"
           type="search"
           bind:value={appState.searchInput}
           aria-label="search tasks"
         />
         <button
-          class="w-full min-h-[34px] px-2 py-1.5 border border-[var(--line)] rounded-none bg-[var(--white)] text-[var(--ink)] font-[inherit]"
+          class="font-bold w-full min-h-8.5 text-xs uppercase border px-2 py-1.5 border-(--line) bg-(--white) text-(--ink)"
           type="submit">Otsi</button
         >
       </div>
@@ -180,6 +195,7 @@
     background-color: var(--white);
     width: auto;
     gap: 14px;
+    width: 400px;
   }
 
   label,
@@ -189,7 +205,6 @@
     margin-bottom: 6px;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -197,10 +212,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 0 0 16px;
     color: var(--ink);
     font-size: 14px;
-    letter-spacing: 0;
     text-transform: none;
   }
 
@@ -216,8 +229,8 @@
   }
 
   .search-row input {
-    min-width: 200px;
-    width: 200px;
+    min-width: 220px;
+    width: 220px;
   }
 
   .search-row input::-webkit-search-cancel-button,
@@ -238,7 +251,6 @@
   .exam-list h3 {
     margin: 0 0 8px;
     font-size: 12px;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -252,7 +264,7 @@
     display: flex;
     gap: 6px;
     padding-bottom: 2px;
-    border-bottom: 1px black solid;
+    border-bottom: 1px var(--line) solid;
   }
 
   .year-link {
@@ -277,13 +289,19 @@
 
   .task-dropdown {
     margin: 0 0 8px 12px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .task-dropdown button {
     border-width: 0 0 1px 0;
+    border-color: var(--line);
+    width: 100%;
     text-align: left;
     font-size: 13px;
     font-weight: 400;
+    padding-bottom: 2px;
   }
 
   .no-year-tasks {
@@ -316,7 +334,8 @@
   }
 
   .mobile-sidebar .search-row input {
-    min-width: 300px;
+    min-width: 220px;
+    width: 100%;
   }
 
   .mobile-sidebar .search-row button {
